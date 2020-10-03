@@ -88,4 +88,5 @@ footer {
     .card {
         width: calc(33% - 1em);
         /* flex: 0 1 33%; */
+    }
 }
