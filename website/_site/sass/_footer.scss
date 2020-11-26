@@ -1,0 +1,29 @@
+footer  {
+    width: 100%;
+    background-color:$dark;
+    .social-menu {
+        max-width:960px;
+        margin:0 auto;
+        background-color: $dark;
+        display:flex;
+        padding: 1em;
+        font-size: 2em;
+        justify-content: space-around;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color:$light;
+        }
+        a:hover {
+            color:lighten($light, 100);
+        }
+    }
+}
+@media (max-width:620px) {
+    footer {
+         .social-menu {
+        padding:0.7em;
+        font-size: 1.5em;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "mdisumma.com",
+  "main": "",
+  "scripts": {
+    "start": "sass sass/main.scss:css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdisumma/website.git"
+  },
+  "author": "Marco Di Summa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdisumma/website/issues"
+  },
+  "homepage": "https://github.com/mdisumma/website#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
