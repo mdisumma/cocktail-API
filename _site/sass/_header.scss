@@ -1,6 +1,6 @@
 
 header {
-    max-width: 960px;
+    max-width: $desktop;
     width: 100%;
     text-align: center;
     padding:1em;
@@ -23,7 +23,7 @@ header {
     }
    
 }
-@media (max-width:620px) {
+@media (max-width:$tablet) {
     header {
         .masthead h1 {
             font-size:3.3em;
@@ -33,7 +33,7 @@ header {
         }
     }
 }
-@media (max-width:460px) {
+@media (max-width:$phone) {
     header {
        background-color: $dark; 
         .masthead {
@@ -41,7 +41,7 @@ header {
         }
     }
 }
-@media (min-width: 960px) {
+@media (min-width: $desktop) {
     header {
         display:flex;
         justify-content: center;
@@ -53,7 +53,7 @@ header {
             flex-direction: column; 
             justify-content: space-evenly;
             .logo {
-                max-width:500px;
+                max-width:$phone;
                 padding:0 2em;
                 margin: 0;
             }    

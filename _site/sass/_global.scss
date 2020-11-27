@@ -1,12 +1,17 @@
+$phone: 460px;
+$tablet: 620px;
+$desktop: 960px;
+
 $dark: rgb(26, 26, 26);
 $mid: rgb(100, 100, 100);
 $light: rgb(200, 200, 200);
+
 $head-style: 'Gruppo', cursive;
 $body-style: 'Montserrat', sans-serif;
 
 html {
     margin: 0 auto;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body {
     margin: 0;

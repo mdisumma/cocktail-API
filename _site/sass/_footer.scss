@@ -2,7 +2,7 @@ footer  {
     width: 100%;
     background-color:$dark;
     .social-menu {
-        max-width:960px;
+        max-width:$desktop;
         margin:0 auto;
         background-color: $dark;
         display:flex;
@@ -19,7 +19,7 @@ footer  {
         }
     }
 }
-@media (max-width:620px) {
+@media (max-width:$tablet) {
     footer {
          .social-menu {
         padding:0.7em;

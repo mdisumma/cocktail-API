@@ -50,7 +50,7 @@ main {
         }
     }
 }
-@media (max-width:620px) {
+@media (max-width:$tablet) {
     main {
         ul {
         display:block;
