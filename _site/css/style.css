@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap");
 html {
   margin: 0 auto;
-  font-family: "Roboto Slab", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2px;
+  word-spacing: 3px;
+  line-height: 2.4em;
   min-width: 360px;
   color: #1a1a1a;
 }
@@ -71,7 +74,7 @@ header .masthead p {
     justify-content: space-evenly;
   }
   header .masthead .logo {
-    max-width: 500px;
+    max-width: 460px;
     padding: 0 2em;
     margin: 0;
   }

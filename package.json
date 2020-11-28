@@ -4,7 +4,7 @@
   "description": "mdisumma.com",
   "main": "",
   "scripts": {
-    "start": "sass sass/main.scss:css/style.css --watch"
+    "start": "sass _site/sass/main.scss:_site/css/style.css --watch"
   },
   "repository": {
     "type": "git",
