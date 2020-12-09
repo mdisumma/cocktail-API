@@ -5,51 +5,10 @@ main {
     max-width: 960px;
     box-shadow:5px 10px 15px $mid;
     
-    h1 {
-    font-family: $head-style;
-    font-size:2em;    
-    }
-    h2 {
-    font-family: $head-style;
-    font-size:1.5em;
-    }
-    h3 { 
-    color: $mid;
-    font-weight: 300;
-    font-family: $body-style;
-    font-size:1em; 
-    }
-    span {
-    font-size: 0.8em;
-    }
     a {
-        
         color:$mid;
         }
-    
-    ul {
-        max-width: 960px;
-        padding:0;
-        margin:0 auto;
-        list-style: none; 
-        display:flex;
-        justify-content: space-evenly;
-        li {
-            display:flex;
-            padding:1em 0.8em;
-            a {
-            text-decoration: none;
-            text-transform: uppercase;
-            color:$mid;
-            }
-            a:hover {
-                text-decoration: underline;
-                color:darken($light, 50);
-                
-            }
-        }
     }
-}
 @media (max-width:$tablet) {
     main {
         ul {
