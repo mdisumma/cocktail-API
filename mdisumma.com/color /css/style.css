@@ -91,6 +91,9 @@ section {
 footer {
     background-color:rgb(58, 58, 58);
 }
+.presentation video {
+    width:100%;
+}
 
 @media (min-width: 600px) {
 }
