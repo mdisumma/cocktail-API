@@ -50,6 +50,7 @@ html body main section.dbSearchByName ul li a figure {
   margin: 0;
 }
 html body main section.cocktailGallery ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }

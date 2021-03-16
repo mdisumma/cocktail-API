@@ -10,7 +10,6 @@ html {
         min-width: 320px; 
         max-width: 420px; 
         margin:0 auto ;
-       ;
         header {
            background-color: rgb(156, 255, 74);
             h1 {
@@ -46,12 +45,10 @@ html {
                         margin:0;
                         a{
                             figure {
-                                margin:0;
-                                
+                                margin:0;   
                             }
                         }
                     }
-                
                 }   
             }//section.dbSearchByName
             section.cocktailGallery {
