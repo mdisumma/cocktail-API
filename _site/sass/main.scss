@@ -1,12 +1,9 @@
 html {
     background-color: black;
-    body > * {
-        box-sizing: border-box;
-    }
     body {
+        background-color: rgb(232, 255, 148);
         border: 1px solid rgb(156, 255, 74);
         color:rgb(29, 70, 0);
-        background-color: rgb(230, 254, 144);
         min-width: 320px; 
         max-width: 420px; 
         margin:0 auto ;
@@ -19,7 +16,6 @@ html {
             }
         }
         main {
-            
             section.dbSearchByName {
                 padding: 20px;
                 display:flex;

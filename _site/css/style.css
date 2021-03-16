@@ -1,13 +1,10 @@
 html {
   background-color: black;
 }
-html body > * {
-  box-sizing: border-box;
-}
 html body {
+  background-color: #e8ff94;
   border: 1px solid #9cff4a;
   color: #1d4600;
-  background-color: #e6fe90;
   min-width: 320px;
   max-width: 420px;
   margin: 0 auto;
