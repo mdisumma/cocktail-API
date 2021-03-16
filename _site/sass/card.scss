@@ -1,6 +1,12 @@
-ul{
-list-style: none;
+div#drinkData {
+    display:grid;
+    grid-template-columns: 1fr;
+    img {
+       width:100%;
+    }
+    ul{
+        list-style: none;
+    }
+  
 }
-img {
-    width:300px;
-}
+

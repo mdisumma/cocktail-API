@@ -1,91 +1,19 @@
+@import 'header';
+@import 'form';
 @import 'card';
+@import 'gallery';
+@import 'footer';
 
+//global
 html {
     background-color: black;
     body {
         background-color: rgb(232, 255, 148);
-        border: 1px solid rgb(156, 255, 74);
         color:rgb(29, 70, 0);
         min-width: 320px; 
-        max-width: 420px; 
+        max-width: 960px; 
         margin:0 auto ;
-        header {
-           background-color: rgb(156, 255, 74);
-            h1 {
-                font-size:3em;
-                padding:10px;
-                margin: 0;
-                text-align: center;
-            }
-        }
-        main {
-            section.dbSearchByName {
-                padding: 20px;
-                display:flex;
-                flex-direction: column;
-                justify-content: center;
-                form  {
-                    padding: 10px;
-                    label {
-                        font-size: 1.2em;
-                        margin: 5px 0;
-                        display:block;
-                    }
-                    button {
-                        border: 1px solid rgb(29, 70, 0);
-                        background-color: rgb(156, 255, 74) ;
-                        text-align:center ;
-                    }
-                }
-                ul{
-                padding:0;
-                margin:0;
-                    li {
-                        padding:0;
-                        margin:0;
-                        a{
-                            figure {
-                                margin:0;   
-                            }
-                        }
-                    }
-                }   
-            }//section.dbSearchByName
-            section.cocktailGallery {
-                ul{
-                list-style: none;
-                padding:0;
-                margin:0;
-                    li {
-                    padding:0;
-                    margin:0;
-                        a {
-                            figure {
-                            list-style: none;
-                                background-color:rgb(156, 255, 74) ;
-                                max-width: 360px; 
-                                margin:0 auto ;
-                                figcaption {
-                                    font-size: 1.2em;
-                                    padding:1em;
-                                    text-align:center ;
-                                }//figcaption 
-                                img {
-                                    width:100%;
-                                }   
-                            }//figure
-                        }//anchor
-                    }//li
-                } //ul   
-            }//section.cocktailGallery
-        }//main    
-        footer {
-            padding:10px;
-            background-color: rgb(156, 255, 74);
-            p {
-                margin: 0;
-            }    
-        }//footer    
+        
     }//body
 } //html
 

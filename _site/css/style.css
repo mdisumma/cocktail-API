@@ -1,9 +1,80 @@
-ul {
+header {
+  background-color: #9cff4a;
+}
+header h1 {
+  font-size: 3em;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+section.dbSearchByName {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.dbSearchByName form {
+  padding: 10px;
+}
+section.dbSearchByName form label {
+  font-size: 1.2em;
+  margin: 5px 0;
+  display: block;
+}
+section.dbSearchByName form button {
+  border: 1px solid #1d4600;
+  background-color: #9cff4a;
+  text-align: center;
+}
+section.dbSearchByName ul {
+  padding: 0;
+  margin: 0;
+}
+section.dbSearchByName ul li {
+  padding: 0;
+  margin: 0;
+}
+section.dbSearchByName ul li a figure {
+  margin: 0;
+}
+
+div#drinkData {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+div#drinkData img {
+  width: 100%;
+}
+div#drinkData ul {
   list-style: none;
 }
 
-img {
-  width: 300px;
+section.cocktailGallery > * {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+section.cocktailGallery ul {
+  max-width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+section.cocktailGallery ul li {
+  justify-content: center;
+}
+section.cocktailGallery ul li figure {
+  margin: 0;
+}
+
+footer {
+  padding: 10px;
+  background-color: #9cff4a;
+}
+footer p {
+  margin: 0;
 }
 
 html {
@@ -11,80 +82,10 @@ html {
 }
 html body {
   background-color: #e8ff94;
-  border: 1px solid #9cff4a;
   color: #1d4600;
   min-width: 320px;
-  max-width: 420px;
+  max-width: 960px;
   margin: 0 auto;
-}
-html body header {
-  background-color: #9cff4a;
-}
-html body header h1 {
-  font-size: 3em;
-  padding: 10px;
-  margin: 0;
-  text-align: center;
-}
-html body main section.dbSearchByName {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-html body main section.dbSearchByName form {
-  padding: 10px;
-}
-html body main section.dbSearchByName form label {
-  font-size: 1.2em;
-  margin: 5px 0;
-  display: block;
-}
-html body main section.dbSearchByName form button {
-  border: 1px solid #1d4600;
-  background-color: #9cff4a;
-  text-align: center;
-}
-html body main section.dbSearchByName ul {
-  padding: 0;
-  margin: 0;
-}
-html body main section.dbSearchByName ul li {
-  padding: 0;
-  margin: 0;
-}
-html body main section.dbSearchByName ul li a figure {
-  margin: 0;
-}
-html body main section.cocktailGallery ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-html body main section.cocktailGallery ul li {
-  padding: 0;
-  margin: 0;
-}
-html body main section.cocktailGallery ul li a figure {
-  list-style: none;
-  background-color: #9cff4a;
-  max-width: 360px;
-  margin: 0 auto;
-}
-html body main section.cocktailGallery ul li a figure figcaption {
-  font-size: 1.2em;
-  padding: 1em;
-  text-align: center;
-}
-html body main section.cocktailGallery ul li a figure img {
-  width: 100%;
-}
-html body footer {
-  padding: 10px;
-  background-color: #9cff4a;
-}
-html body footer p {
-  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
