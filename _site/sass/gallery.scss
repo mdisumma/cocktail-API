@@ -3,12 +3,15 @@ section.cocktailGallery  {
     display:grid;
     justify-content: center;
     grid-gap:10px;
-    div {
+    div #cocktailSelection {
         margin:0 auto;
         width:320px;
         
         figcaption {
         text-align:center;
+            img {
+            width:320;
+            }
         }  
     }
 }

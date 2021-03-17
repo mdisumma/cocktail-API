@@ -44,12 +44,15 @@ section.cocktailGallery {
   justify-content: center;
   grid-gap: 10px;
 }
-section.cocktailGallery div {
+section.cocktailGallery div #cocktailSelection {
   margin: 0 auto;
   width: 320px;
 }
-section.cocktailGallery div figcaption {
+section.cocktailGallery div #cocktailSelection figcaption {
   text-align: center;
+}
+section.cocktailGallery div #cocktailSelection figcaption img {
+  width: 320;
 }
 
 footer {
