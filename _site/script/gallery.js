@@ -1,8 +1,8 @@
 const apiKey = "?rapidapi-key=a0ab4d64c9mshf661ca3514922aap1f9a12jsn3c719091a462"
-const Url = 'https://the-cocktail-db.p.rapidapi.com/randomselection.php';
+const selectionUrl = 'https://the-cocktail-db.p.rapidapi.com/randomselection.php';
 //https://example.p.rapidapi.com/?rapidapi-key=***************************
 const getData = async () => {
-    let { data } = await axios.get(Url + apiKey)
+    let { data } = await axios.get(selectionUrl + apiKey)
     return data
 }
 
