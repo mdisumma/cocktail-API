@@ -1,22 +1,15 @@
-section.cocktailGallery > * {
+
+section.cocktailGallery  {
     display:grid;
-    grid-template-columns: 1fr;
+    justify-content: center;
     grid-gap:10px;
-}//section.cocktailGallery
-section.cocktailGallery {
-    ul {
-        max-width: 320px;
-        padding:0;
+    div {
         margin:0 auto;
-        list-style:none;
-        li{
-            justify-content: center;
-            figure {
-                margin:0;
-            }
-        }
+        width:320px;
         
+        figcaption {
+        text-align:center;
+        }  
     }
 }
 
-    

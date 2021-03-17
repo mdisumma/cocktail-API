@@ -95,7 +95,7 @@ const createRequest = (url) => {
             console.log(`For Italian ${drinkInstructionsItalian}`);
 
             //print html on index document
-            const printHtml = document.querySelector('#drinkData');
+            const printHtml = document.querySelector('#byName');
             printHtml.innerHTML = `
         <h1>${drinkName}</h1>
         <img src="${drinkImg}">
