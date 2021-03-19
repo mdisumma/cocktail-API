@@ -36,31 +36,28 @@ div#byName ul {
   list-style: none;
 }
 
-section.cocktailGallery > * {
+section.cocktailGallery {
+  border-top: 1px solid #1d4600;
+  padding-top: 2em;
+}
+section.cocktailGallery #cocktailSelection {
   display: grid;
   justify-content: center;
   grid-gap: 10px;
 }
-section.cocktailGallery > * div #cocktailSelection {
-  margin: 0 auto;
-  width: 320px;
-}
-section.cocktailGallery > * div #cocktailSelection figcaption {
+section.cocktailGallery #cocktailSelection figure figcaption {
+  padding: 0.5em;
   text-align: center;
-}
-section.cocktailGallery > * div #cocktailSelection figcaption img {
-  width: 320;
 }
 
 @media (min-width: 460px) {
-  section.cocktailGallery > * {
+  section.cocktailGallery #cocktailSelection {
     display: flex;
     flex-wrap: wrap;
   }
 }
 footer {
   padding: 10px;
-  background-color: #9cff4a;
 }
 footer p {
   margin: 0;
