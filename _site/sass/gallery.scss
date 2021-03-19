@@ -1,5 +1,5 @@
-
-section.cocktailGallery  {
+$phone: 460px;
+section.cocktailGallery > *  {
     display:grid;
     justify-content: center;
     grid-gap:10px;
@@ -15,4 +15,9 @@ section.cocktailGallery  {
         }  
     }
 }
-
+@media (min-width: $phone) {
+    section.cocktailGallery > * {
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
