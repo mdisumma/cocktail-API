@@ -18,12 +18,6 @@ section.dbSearchByName form label {
   margin: 5px 0;
   display: block;
 }
-section.dbSearchByName form button {
-  border-radius: 5px;
-  border: 1px solid #1d4600;
-  background-color: #9cff4a;
-  text-align: center;
-}
 
 div#byName {
   display: grid;
@@ -64,7 +58,7 @@ footer p {
 }
 
 body {
-  background-color: #d2f74f;
+  background-color: #ddffc7;
   color: #1d4600;
   min-width: 320px;
   max-width: 1000px;
