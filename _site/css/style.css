@@ -4,16 +4,16 @@ header h1 {
   text-align: center;
 }
 
-section.dbSearchByName {
-  padding: 20px;
+section.searchByName, section.searchByIngredient {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-section.dbSearchByName form {
+section.searchByName form, section.searchByIngredient form {
+  margin: 20px;
   padding: 10px;
 }
-section.dbSearchByName form label {
+section.searchByName form label, section.searchByIngredient form label {
   font-size: 1.2em;
   margin: 5px 0;
   display: block;
@@ -30,22 +30,30 @@ div#byName ul {
   list-style: none;
 }
 
-section.cocktailGallery {
+section.cocktailGallery,
+section.searchByIngredient {
   border-top: 1px solid #1d4600;
   padding-top: 2em;
 }
-section.cocktailGallery #cocktailSelection {
+section.cocktailGallery #cocktailSelection,
+section.cocktailGallery #byIngredient,
+section.searchByIngredient #cocktailSelection,
+section.searchByIngredient #byIngredient {
   display: grid;
   justify-content: center;
   grid-gap: 10px;
 }
-section.cocktailGallery #cocktailSelection figure figcaption {
+section.cocktailGallery #cocktailSelection figure figcaption,
+section.cocktailGallery #byIngredient figure figcaption,
+section.searchByIngredient #cocktailSelection figure figcaption,
+section.searchByIngredient #byIngredient figure figcaption {
   padding: 0.5em;
   text-align: center;
 }
 
 @media (min-width: 460px) {
-  section.cocktailGallery #cocktailSelection {
+  section.cocktailGallery #cocktailSelection,
+section.searchByIngredient #byIngredient {
     display: flex;
     flex-wrap: wrap;
   }

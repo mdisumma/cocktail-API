@@ -1,8 +1,11 @@
 $phone: 460px;
-section.cocktailGallery {
+section.cocktailGallery,
+section.searchByIngredient {
+
     border-top: 1px solid rgb(29, 70, 0);
     padding-top: 2em;;
-    #cocktailSelection  {
+    #cocktailSelection,
+    #byIngredient  {
         display:grid;
         justify-content: center;
         grid-gap:10px;
@@ -15,7 +18,9 @@ section.cocktailGallery {
     }
 }
 @media (min-width: $phone) {
-    section.cocktailGallery #cocktailSelection  {
+    section.cocktailGallery #cocktailSelection, 
+    section.searchByIngredient #byIngredient
+    {
         display:flex;
         flex-wrap: wrap;
     }

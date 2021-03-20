@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="script/srcName.js" defer></script>
-    <script src="script/srcIngredient.js" defer></script>
+    <script src="script/scrIngredient.js" defer></script>
     <script src="script/gallery.js" defer></script>
     <title>Cocktail-application</title>
 </head>
@@ -17,15 +17,16 @@
         <h1>LOGO</h1>
     </header>
     <main>
-        <section class="dbSearchByName">
-            <form class="formSearchByName">
+        <section class="searchByName">
+            <form class="searchByNameForm">
                 <label for="inputName">Search cocktail by name:</label>
                 <input type="text" id="inputName" placeholder="Enter cocktail name">
                 <button id="valueName">Search</button>
             </form>
             <div id="byName"></div>
-
-            <form class="dbSearchByIngredient">
+        </section>
+        <section class="searchByIngredient">
+            <form class="searchByIngredientForm">
                 <label for="inputName">Search cocktail by ingredient:</label>
                 <input type="text" id="inputIngredient" placeholder="Enter ingredient name">
                 <button id="valueIngredient">Search</button>

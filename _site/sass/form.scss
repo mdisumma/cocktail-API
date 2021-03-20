@@ -1,9 +1,10 @@
-section.dbSearchByName {
-    padding: 20px;
+section.searchByName, section.searchByIngredient {
+
     display:flex;
     flex-direction: column;
     justify-content: center;
     form  {
+        margin: 20px;
         padding: 10px;
         label {
             font-size: 1.2em;
