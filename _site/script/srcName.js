@@ -1,25 +1,37 @@
 
-
+//////CHOSE COCKTAIL BY NAME
 //event call (click)
-const getDrink = document.getElementById("valueName").addEventListener("click", getValue);
+const getByName = document.getElementById("valueName").addEventListener("click", getValue);
 // get value of the input field
-const cocktailValue = document.getElementById("inputName").value;
+const nameValue = document.getElementById("inputName").value;
 //define getValue from line 3
 function getValue(event) {
     //prevent to reload the page (form tag) 
     event.preventDefault()
-    const cocktailValue = document.getElementById("inputName").value;
+    const getValue = document.getElementById("inputName").value;
     //reset the input field
     document.querySelector('#inputName').value = '';
-    //console.log for validation
-    // console.log("You submitted the form")
-    // console.log(cocktailValue)
-    createRequest(Url + cocktailValue);
+    createRequest(nameUrl + getValue);
 };
 //get data from cocktail DB
-const Url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
+const nameUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
-
+//////CHOSE COCKTAIL BY INGREDIENT
+//event call (click)
+const getByIngredient = document.getElementById("valueIngredient").addEventListener("click", getValue);
+// get value of the input field
+const IngredientValue = document.getElementById("inputIngredient").value;
+//define getValue from line 3
+function getValue(event) {
+    //prevent to reload the page (form tag) 
+    event.preventDefault()
+    const getValue = document.getElementById("inputIngredient").value;
+    //reset the input field
+    document.querySelector("#inputIngredient").value = "";
+    createRequest(ingredientUrl + getValue);
+};
+//get data from cocktail DB
+const ingredientUrl = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=';
 // const imgWidth = "400";
 
 // check for error
