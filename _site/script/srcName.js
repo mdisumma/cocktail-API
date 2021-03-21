@@ -7,7 +7,6 @@ const ifError = (response) => {
     return response.json();
 }
 
-
 //////CHOSE COCKTAIL BY NAME
 const getByName = document.getElementById("valueName").addEventListener("click",
     function getValue(event) {
@@ -19,13 +18,7 @@ const getByName = document.getElementById("valueName").addEventListener("click",
         nameRequest(nameUrl + getValue);
     });
 
-const nameValue = document.getElementById("inputName").value;
 const nameUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
-
-
-
-
-
 //parse data in JSON format
 const nameRequest = (url) => {
     fetch(url)

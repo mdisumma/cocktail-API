@@ -1,4 +1,6 @@
+
 //CHOSE COCKTAIL BY INGREDIENT
+
 const getByIngredient = document.getElementById("valueIngredient").addEventListener("click", function getValue(event) {
     //prevent to reload the page (form tag) 
     event.preventDefault()
@@ -8,7 +10,6 @@ const getByIngredient = document.getElementById("valueIngredient").addEventListe
     ingredientRequest(nameUrl + getValue);
 });
 
-const IngredientValue = document.getElementById("inputIngredient").value;
 const ingredientUrl = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=';
 
 const ingredientRequest = (url) => {

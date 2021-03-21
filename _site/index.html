@@ -17,26 +17,25 @@
         <h1>LOGO</h1>
     </header>
     <main>
-        <section class="searchByName">
-            <form class="searchByNameForm">
+        <div class="container">
+            <section class="searchByName">
                 <label for="inputName">Search cocktail by name:</label>
                 <input type="text" id="inputName" placeholder="Enter cocktail name">
                 <button id="valueName">Search</button>
-            </form>
-            <div id="byName"></div>
-        </section>
-        <section class="searchByIngredient">
-            <form class="searchByIngredientForm">
+                <div id="byName"></div>
+            </section>
+            <section class="searchByIngredient">
                 <label for="inputName">Search cocktail by ingredient:</label>
                 <input type="text" id="inputIngredient" placeholder="Enter ingredient name">
                 <button id="valueIngredient">Search</button>
-            </form>
-            <div id="byIngredient"></div>
-        </section>
-
+                <div id="byIngredient"></div>
+            </section>
+        </div>
+        <hr>
         <section class="cocktailGallery">
-            <div id="cocktailSelection">
-            </div>
+            <h2>Popular</h2>
+            <div id="listByPopular"></div>
+        </section>
     </main>
     <footer>
         <p>developed by Marco Di Summa</p>

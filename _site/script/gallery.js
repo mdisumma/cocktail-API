@@ -1,24 +1,26 @@
+
 const apiKey = "?rapidapi-key=a0ab4d64c9mshf661ca3514922aap1f9a12jsn3c719091a462"
-const selectionUrl = 'https://the-cocktail-db.p.rapidapi.com/randomselection.php';
+const selectedUrl = 'https://the-cocktail-db.p.rapidapi.com/popular.php';
 //https://example.p.rapidapi.com/?rapidapi-key=***************************
+
+//get data with axiom
 const getData = async () => {
-    let { data } = await axios.get(selectionUrl + apiKey)
+    let { data } = await axios.get(selectedUrl + apiKey)
     return data
 }
 
-
-//PARCE DATA
+// parse data
 document.addEventListener('DOMContentLoaded', async () => {
     const results = await getData()
     console.log(results);
     for (const value of results.drinks) {
 
-        const printHTML = document.querySelector('#cocktailSelection');
+        const printHTML = document.querySelector('#listByPopular');
         printHTML.innerHTML += `
         <a>
         <figure>
             <figcaption>${value.strDrink}</figcaption>
-            <img src="${value.strDrinkThumb}" width="320" alt="placeholder">
+            <img src="${value.strDrinkThumb}">
         </figure>
     </a>`;
     }
