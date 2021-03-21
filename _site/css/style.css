@@ -94,10 +94,6 @@ body main .cocktailGallery #listByPopular figure img {
   body {
     padding: 1em;
   }
-  body .container {
-    display: flex;
-    justify-content: space-evenly;
-  }
   body #listByPopular {
     display: flex;
   }
