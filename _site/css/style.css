@@ -52,6 +52,25 @@ table {
   border-spacing: 0;
 }
 
+div#byName {
+  border: 1px solid red;
+  background-color: #f5eedd;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+div#byName h3 {
+  text-align: center;
+}
+div#byName img {
+  width: 100%;
+}
+div#byName ul, div#byName p {
+  margin: 1em;
+}
+div#byName .hide {
+  display: none;
+}
+
 html {
   font-size: 16px;
 }

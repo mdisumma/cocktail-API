@@ -1,12 +1,20 @@
 div#byName {
+    border: 1px solid red;
+    background-color: rgb(245, 238, 221);
     display:grid;
     grid-template-columns: 1fr;
+   h3 {
+       text-align: center;
+   }
     img {
        width:100%;
     }
-    ul{
-        list-style: none;
+    ul, p{
+        margin:1em
+        
     }
-  
+    .hide {
+        display:none;
+    } 
 }
 

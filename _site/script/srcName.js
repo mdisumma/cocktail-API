@@ -68,45 +68,65 @@ const nameRequest = (url) => {
             const measure14 = parsedData.drinks[0].strMeasure14
             const measure15 = parsedData.drinks[0].strMeasure15
 
-
             //Instructions
             const drinkInstructions = parsedData.drinks[0].strInstructions
             const drinkInstructionsItalian = parsedData.drinks[0].strInstructionsIT
 
-            //print data for validation
-            console.log(`${drinkName}`);
-            console.log(`${drinkImg}`);
-            console.log(`${measure1}: ${add1}`);
-            console.log(`${measure2}: ${add2}`);
-            console.log(`${measure3}: ${add3}`);
-            console.log(`${measure4}: ${add4}`);
-            console.log(`${drinkInstructions}`);
-            console.log(`For Italian ${drinkInstructionsItalian}`);
+            const measureSet = [
+                measure1,
+                measure2,
+                measure3,
+                measure4,
+                measure5,
+                measure6,
+                measure7,
+                measure8,
+                measure9,
+                measure10,
+                measure11,
+                measure12,
+                measure13,
+                measure14,
+                measure15
+            ]
 
             //print html on index document
+
+
             const printHtml = document.querySelector('#byName');
             printHtml.innerHTML = `
-        <h1>${drinkName}</h1>
-        <img src="${drinkImg}">
-        <ul>
-        <li>${measure1}: ${add1}</li>
-        <li>${measure2}: ${add2}</li>
-        <li>${measure3}: ${add3}</li>
-        <li>${measure4}: ${add4}</li>
-        <li>${measure5}: ${add5}</li>
-        <li>${measure6}: ${add6}</li>
-        <li>${measure7}: ${add7}</li>
-        <li>${measure8}: ${add8}</li>
-        <li>${measure9}: ${add9}</li>
-        <li>${measure10}: ${add10}</li>
-        <li>${measure11}: ${add11}</li>
-        <li>${measure12}: ${add12}</li>
-        <li>${measure13}: ${add13}</li>
-        <li>${measure14}: ${add14}</li>
-        <li>${measure15}: ${add15}</li>
-        </ul>
-        <p>${drinkInstructions}</p>
-            `
+            <h3>${drinkName}</h3>
+            <img src="${drinkImg}">
+            <ul>
+            <li>${measure4}: ${add4}</li>
+            <li>${measure1}: ${add1}</li>
+            <li>${measure2}: ${add2}</li>
+            <li>${measure3}: ${add3}</li>
+            <li>${measure5}: ${add5}</li>
+            <li>${measure6}: ${add6}</li>
+            <li>${measure7}: ${add7}</li>
+            <li>${measure8}: ${add8}</li>
+            <li>${measure9}: ${add9}</li>
+            <li>${measure10}: ${add10}</li>
+            <li>${measure11}: ${add11}</li>
+            <li>${measure12}: ${add12}</li>
+            <li>${measure13}: ${add13}</li>
+            <li>${measure14}: ${add14}</li>
+            <li>${measure15}: ${add15}</li>
+            </ul>
+            <p>${drinkInstructions}</p>
+             `
+
+        }).then(() => {
+            const liElement = document.querySelectorAll('#byName ul li')
+            for (let i = 0; i < liElement.length; i++) {
+                let givesValue = liElement[i].innerHTML;
+                let givesClass = liElement[i].classList;
+                if (givesValue === "null: null") {
+                    givesClass.add('hide')
+                }
+            }
         })
+
 };
 
