@@ -1,20 +1,51 @@
 div#byName {
-    border: 1px solid red;
-    background-color: rgb(245, 238, 221);
+    font-size:1.3em;
     display:grid;
     grid-template-columns: 1fr;
    h3 {
+    font-size:1.4em;
        text-align: center;
    }
     img {
-       width:100%;
+       margin:1em;
+       max-width:90%;
+      
     }
-    ul, p{
+    ul, p {
         margin:1em
         
     }
     .hide {
         display:none;
     } 
+}
+@media (min-width: 700px) {
+    div#byName {
+      
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 40% 40% 10%;
+
+        h3 {
+            grid-column: 2/3;
+            
+        }
+        img {
+            justify-content: center;
+            width:100%;
+            grid-column: 1/2;
+            grid-row: 1/4;
+        }
+        ul {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        p {
+            display:flex;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+    }
 }
 

@@ -2,9 +2,11 @@
 @import 'card';
 $phone :360px;
 html {
+    background-color: black;
     font-size:16px;
 }
 body {
+    background-color: rgb(204, 254, 154);
     margin:0 auto;
     min-width: 360px;
     max-width: 1000px;
