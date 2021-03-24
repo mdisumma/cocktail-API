@@ -13,6 +13,8 @@ const getData = async () => {
 document.addEventListener('DOMContentLoaded', async () => {
     const results = await getData()
     console.log(results);
+
+
     for (const value of results.drinks) {
 
         const printHTML = document.querySelector('#listByPopular');
