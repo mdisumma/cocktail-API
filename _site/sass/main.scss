@@ -31,10 +31,12 @@ body {
                 }
         }
         #byIngredient {
+            
             display:flex;
             flex-wrap: wrap;
             justify-content: center;
             figure {
+                background-color:rgb(236, 255, 216);
                 figcaption {
                     padding: 0.5em;
                     text-align:center;
@@ -45,14 +47,18 @@ body {
             }
         }
         .cocktailGallery {
+            
             h2{
                 text-align:center;
             }
             #listByPopular {
                 display:flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: space-evenly;
                 figure {
+                 
+                    padding: 0;
+                    background-color:rgb(236, 255, 216);
                     figcaption {
                         padding: 0.5em;
                         text-align:center;

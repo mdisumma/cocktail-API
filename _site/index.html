@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/byName.js" defer></script>
     <!-- <script src="script/srcName.js" defer></script> -->
-    <script src="script/scrIngredient.js" defer></script>
+    <script src="script/byIngredient.js" defer></script>
     <script src="script/gallery.js" defer></script>
-    <script src="script/append.js" defer></script>
     <title>Cocktail-application</title>
 </head>
 
@@ -20,14 +20,14 @@
     <main>
         <section class="searchByName">
             <label for="inputName">Search cocktail by name:</label>
-            <input type="text" id="inputName" placeholder="Enter cocktail name">
-            <button id="valueName">Search</button>
+            <input type="text" id="inputForName" placeholder="Enter cocktail name">
+            <button id="srcName">Search</button>
         </section>
         <div id="byName"></div>
         <section class="searchByIngredient">
             <label for="inputName">Search cocktail by ingredient:</label>
-            <input type="text" id="inputIngredient" placeholder="Enter ingredient name">
-            <button id="valueIngredient">Search</button>
+            <input type="text" id="inputForIngredient" placeholder="Enter ingredient name">
+            <button id="srcIngredient">Search</button>
         </section>
         <div id="byIngredient"></div>
 

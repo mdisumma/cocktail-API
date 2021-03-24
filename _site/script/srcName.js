@@ -130,3 +130,21 @@ const nameRequest = (url) => {
 
 };
 
+// const getByName = document.getElementById("valueName").addEventListener("click",
+//     function getValue(event) {
+//         // event.preventDefault()
+//         const place = document.getElementById("inputName").value;
+//         console.log(place)
+//         const nameUrl = 'https://www.themealdb.com/api/json/v1/1/search.php?f=' + place;
+//         //parse data in JSON format
+//         const nameRequest = (url) => {
+//             fetch(url)
+//                 .then((response) => ifError(response))//test for errors
+//                 .then((data) => {
+//                     const parsedData = (data);
+//                     console.log(parsedData);
+
+//                 })
+//         }
+//         nameRequest(nameUrl)
+//     })

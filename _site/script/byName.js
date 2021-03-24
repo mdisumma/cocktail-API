@@ -1,13 +1,23 @@
 // define a testing error function
-const ifError = (response) => {
-    if (!response.ok) {
-        throw (`${respose.status}:${respose.statusText}`);
-    }
-    return response.json();
-}
+// const ifError = (response) => {
+//     if (!response.ok) {
+//         throw (`${respose.status}:${respose.statusText}`);
+//     }
+//     return response.json();
+// }
+const getByName = document.getElementById("srcName").addEventListener("click",
+    function getValue(event) {
+        //prevent to reload the page (form tag) 
+        event.preventDefault()
+        const getValue = document.getElementById("inputForName").value;
+        //reset the input field
+        console.log(getValue)
+        document.querySelector('#inputForName').value = '';
+        nameRequest(nameUrl + getValue);
+    });
 
 // define api url
-const nameUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
+const nameUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
 //parse data in JSON format
 const nameRequest = (url) => {
@@ -110,7 +120,7 @@ const nameRequest = (url) => {
             }
         })
 }
-nameRequest(nameUrl)
+
 
 
 

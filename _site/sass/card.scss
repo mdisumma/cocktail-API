@@ -1,4 +1,5 @@
 div#byName {
+    margin: 1em;;
     background-color:rgb(236, 255, 216); 
     font-size:1.3em;
     display:grid;
@@ -13,6 +14,7 @@ div#byName {
       
     }
     ul, p {
+        
         margin:1em
         
     }
@@ -20,7 +22,7 @@ div#byName {
         display:none;
     } 
 }
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     div#byName {
         padding:1em;
         display:grid;

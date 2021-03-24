@@ -53,6 +53,7 @@ table {
 }
 
 div#byName {
+  margin: 1em;
   background-color: #ecffd8;
   font-size: 1.3em;
   display: grid;
@@ -73,7 +74,7 @@ div#byName .hide {
   display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   div#byName {
     padding: 1em;
     display: grid;
@@ -129,6 +130,9 @@ body main #byIngredient {
   flex-wrap: wrap;
   justify-content: center;
 }
+body main #byIngredient figure {
+  background-color: #ecffd8;
+}
 body main #byIngredient figure figcaption {
   padding: 0.5em;
   text-align: center;
@@ -142,7 +146,11 @@ body main .cocktailGallery h2 {
 body main .cocktailGallery #listByPopular {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+body main .cocktailGallery #listByPopular figure {
+  padding: 0;
+  background-color: #ecffd8;
 }
 body main .cocktailGallery #listByPopular figure figcaption {
   padding: 0.5em;
