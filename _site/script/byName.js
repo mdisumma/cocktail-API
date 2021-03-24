@@ -1,18 +1,12 @@
-// define a testing error function
-// const ifError = (response) => {
-//     if (!response.ok) {
-//         throw (`${respose.status}:${respose.statusText}`);
-//     }
-//     return response.json();
-// }
+// event
 const getByName = document.getElementById("srcName").addEventListener("click",
     function getValue(event) {
         //prevent to reload the page (form tag) 
-        event.preventDefault()
+        // event.preventDefault()
         const getValue = document.getElementById("inputForName").value;
-        //reset the input field
         console.log(getValue)
-        document.querySelector('#inputForName').value = '';
+        //reset the input field
+        // document.querySelector('#inputForName').value = '';
         nameRequest(nameUrl + getValue);
     });
 
