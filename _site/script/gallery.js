@@ -19,12 +19,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const printHTML = document.querySelector('#listByPopular');
         printHTML.innerHTML += `
-        <a>
         <figure>
             <figcaption>${value.strDrink}</figcaption>
             <img src="${value.strDrinkThumb}">
-        </figure>
-    </a>`;
+        </figure>`;
     }
 
 });

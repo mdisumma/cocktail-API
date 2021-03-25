@@ -52,62 +52,62 @@ table {
   border-spacing: 0;
 }
 
-.helpText {
+#byName .helpText {
+  display: block;
+  color: #fe8c00;
   text-align: center;
-  grid-column: 1/3;
 }
 
-div#byName {
+div#cardContainer {
   padding: 1em;
   background-color: #ecffd8;
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
 }
-div#byName h3 {
+div#cardContainer h3 {
   font-size: 1.4em;
   text-align: center;
 }
-div#byName img {
+div#cardContainer img {
   margin: 1em;
   max-width: 90%;
 }
-div#byName ul, div#byName p {
+div#cardContainer ul, div#cardContainer p {
   font-size: 1.2em;
   text-align: start;
   margin: 1em;
 }
-div#byName .hide {
+div#cardContainer .hide {
   display: none;
 }
 
 @media (min-width: 900px) {
-  div#byName .helpText {
+  #byName {
     text-align: center;
-    grid-column: 1/4;
   }
 
-  div#byName {
+  div#cardContainer {
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 40% 40% 10%;
   }
-  div#byName h3 {
+  div#cardContainer h3 {
     grid-column: 2/3;
   }
-  div#byName img {
+  div#cardContainer img {
     margin: 0;
     justify-content: center;
     width: 100%;
     grid-column: 1/2;
     grid-row: 1/4;
   }
-  div#byName ul {
+  div#cardContainer ul {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  div#byName p {
+  div#cardContainer p {
     display: flex;
     grid-column: 2/3;
     grid-row: 3/4;
@@ -118,7 +118,8 @@ html {
   font-size: 16px;
 }
 
-span {
+.helpText {
+  color: #fe8c00;
   text-align: center;
 }
 
@@ -129,6 +130,7 @@ body {
   max-width: 1000px;
 }
 body header {
+  font-size: 2em;
   text-align: center;
 }
 body main .searchByName, body main .searchByIngredient {
@@ -137,65 +139,36 @@ body main .searchByName, body main .searchByIngredient {
   display: grid;
   grid-template-columns: 60% 30%;
   grid-gap: 0.5em;
+  justify-content: center;
 }
 body main .searchByName label, body main .searchByIngredient label {
   grid-column: 1/3;
 }
-body main #byIngredient {
-  padding: 1em;
-  background-color: #ecffd8;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-body main #byIngredient figure {
-  background-color: #ecffd8;
-}
-body main #byIngredient figure figcaption {
-  padding: 0.5em;
-  text-align: center;
-}
-body main #byIngredient figure img {
-  width: 300px;
-}
-body main .cocktailGallery h2 {
-  padding: 1em;
-  font-size: 2em;
-  text-align: center;
-}
-body main .cocktailGallery #listByPopular {
+body #byIngredient, body #listByPopular {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-body main .cocktailGallery #listByPopular figure {
+body #byIngredient figure, body #listByPopular figure {
+  margin-top: 1em;
+  font-size: 1.2;
   padding: 0;
   background-color: #ecffd8;
 }
-body main .cocktailGallery #listByPopular figure figcaption {
+body #byIngredient figure figcaption, body #listByPopular figure figcaption {
   padding: 0.5em;
   text-align: center;
 }
-body main .cocktailGallery #listByPopular figure img {
+body #byIngredient figure img, body #listByPopular figure img {
   width: 300px;
 }
-
-@media (min-width: 360px) {
-  #ByName, #ByIngredient {
-    width: 100%;
-    background-color: aqua;
-  }
-
-  #listByPopular figure, #byIngredient figure {
-    padding: 0.5em;
-  }
-
-  footer {
-    display: flex;
-    justify-content: space-between;
-  }
+body .cocktailGallery h2 {
+  padding: 1em;
+  font-size: 2em;
+  text-align: center;
 }
-@media (min-width: 640px) {
+
+@media (min-width: 760px) {
   body main section.searchByName, body main section.searchByIngredient {
     width: 100%;
     display: grid;
@@ -203,6 +176,7 @@ body main .cocktailGallery #listByPopular figure img {
     justify-content: center;
   }
   body main section.searchByName label, body main section.searchByIngredient label {
+    font-size: 1.2em;
     text-align: end;
     grid-column: 1/2;
   }

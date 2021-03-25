@@ -69,6 +69,7 @@ const nameRequest = (url) => {
 
             //target node
             const printHtml = document.querySelector('#byName');
+            const card = document.createElement('div')
             //create element
             const header = document.createElement('h3');
             const image = document.createElement('img');
@@ -101,10 +102,13 @@ const nameRequest = (url) => {
             process.innerHTML = drinkInstructions
 
             //append card elements
-            printHtml.append(header)
-            printHtml.append(image)
-            printHtml.append(ingredientList)
-            printHtml.append(process)
+            printHtml.append(card)
+            card.id = 'cardContainer'
+            cardContainer = document.querySelector('#cardContainer')
+            cardContainer.append(header)
+            cardContainer.append(image)
+            cardContainer.append(ingredientList)
+            cardContainer.append(process)
 
         }).then(() => {
             //assing hiden class for null items
