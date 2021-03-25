@@ -6,7 +6,7 @@ const getByName = document.getElementById("srcName").addEventListener("click",
         const getValue = document.getElementById("inputForName").value;
         console.log(getValue)
         //reset the input field
-        // document.querySelector('#inputForName').value = '';
+        document.querySelector('#inputForName').value = '';
         nameRequest(nameUrl + getValue);
     });
 
