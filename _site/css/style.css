@@ -52,11 +52,16 @@ table {
   border-spacing: 0;
 }
 
+.helpText {
+  text-align: center;
+  grid-column: 1/3;
+}
+
 div#byName {
-  margin: 1em;
+  padding: 1em;
   background-color: #ecffd8;
-  font-size: 1.3em;
   display: grid;
+  text-align: center;
   grid-template-columns: 1fr;
 }
 div#byName h3 {
@@ -68,6 +73,8 @@ div#byName img {
   max-width: 90%;
 }
 div#byName ul, div#byName p {
+  font-size: 1.2em;
+  text-align: start;
   margin: 1em;
 }
 div#byName .hide {
@@ -75,6 +82,11 @@ div#byName .hide {
 }
 
 @media (min-width: 900px) {
+  div#byName .helpText {
+    text-align: center;
+    grid-column: 1/4;
+  }
+
   div#byName {
     padding: 1em;
     display: grid;
@@ -106,6 +118,10 @@ html {
   font-size: 16px;
 }
 
+span {
+  text-align: center;
+}
+
 body {
   background-color: #ccfe9a;
   margin: 0 auto;
@@ -117,7 +133,7 @@ body header {
 }
 body main .searchByName, body main .searchByIngredient {
   padding: 0.5em;
-  width: 320px;
+  min-width: 320px;
   display: grid;
   grid-template-columns: 60% 30%;
   grid-gap: 0.5em;
@@ -126,6 +142,8 @@ body main .searchByName label, body main .searchByIngredient label {
   grid-column: 1/3;
 }
 body main #byIngredient {
+  padding: 1em;
+  background-color: #ecffd8;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -141,6 +159,8 @@ body main #byIngredient figure img {
   width: 300px;
 }
 body main .cocktailGallery h2 {
+  padding: 1em;
+  font-size: 2em;
   text-align: center;
 }
 body main .cocktailGallery #listByPopular {
@@ -161,18 +181,36 @@ body main .cocktailGallery #listByPopular figure img {
 }
 
 @media (min-width: 360px) {
-  body {
-    padding: 1em;
+  #ByName, #ByIngredient {
+    width: 100%;
+    background-color: aqua;
   }
-  body #listByPopular, body #byIngredient {
-    display: flex;
-  }
-  body #listByPopular figure, body #byIngredient figure {
+
+  #listByPopular figure, #byIngredient figure {
     padding: 0.5em;
   }
-  body footer {
+
+  footer {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media (min-width: 640px) {
+  body main section.searchByName, body main section.searchByIngredient {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 20%;
+    justify-content: center;
+  }
+  body main section.searchByName label, body main section.searchByIngredient label {
+    text-align: end;
+    grid-column: 1/2;
+  }
+  body main section.searchByName input, body main section.searchByIngredient input {
+    grid-column: 2/3;
+  }
+  body main section.searchByName button, body main section.searchByIngredient button {
+    grid-column: 3/4;
   }
 }
 

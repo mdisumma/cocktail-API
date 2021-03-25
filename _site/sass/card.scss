@@ -1,8 +1,13 @@
+.helpText{
+    text-align: center;
+    grid-column: 1/3;
+}
+
 div#byName {
-    margin: 1em;;
+    padding: 1em;
     background-color:rgb(236, 255, 216); 
-    font-size:1.3em;
     display:grid;
+    text-align: center;
     grid-template-columns: 1fr;
    h3 {
     font-size:1.4em;
@@ -14,7 +19,8 @@ div#byName {
       
     }
     ul, p {
-        
+        font-size:1.2em;
+        text-align: start;
         margin:1em
         
     }
@@ -23,12 +29,18 @@ div#byName {
     } 
 }
 @media (min-width: 900px) {
+    
+    div#byName {
+        .helpText{
+        text-align: center;
+        grid-column: 1/4;
+    }
+}
     div#byName {
         padding:1em;
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 10% 40% 40% 10%;
-
         h3 {
             grid-column: 2/3;
             

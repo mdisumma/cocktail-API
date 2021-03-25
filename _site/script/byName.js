@@ -5,7 +5,7 @@ const getByName = document.getElementById("srcName").addEventListener("click",
         const getValue = document.getElementById("inputForName").value;
         if (getValue === '') {
             console.log('enter a  drink')
-            nameResult.outerHTML = ' <div id="byName">please, enter a valid cocktail name</div>'
+            nameResult.outerHTML = ' <div id="byName"><spam class="helpText">please, enter a valid cocktail name</spam></div>'
         } else {
             nameResult.outerHTML = ' <div id="byName"></div>'
             nameRequest(nameUrl + getValue);
