@@ -9,11 +9,18 @@ const ifError = (response) => {
 const getByIngredient = document.getElementById("srcIngredient").addEventListener("click", function getValue(event) {
     //prevent to reload the page (form tag) 
     event.preventDefault()
-    const getValue = document.getElementById("inputForIngredient").value;
-    console.log(getValue);
-    //reset the input field
-    document.querySelector('#inputForIngredient').value = '';
-    ingredientRequest(ingredientUrl + getValue);
+    const ingredientResult = document.querySelector('#byIngredient')
+    const getIngredientValue = document.getElementById("inputForIngredient").value;
+    console.log(getIngredientValue);
+    if (getIngredientValue === '') {
+        ingredientResult.innerHTML = 'please, enter a valid cocktail ingredient';
+    } else {
+        ingredientResult.innerHTML = '';
+        ingredientRequest(ingredientUrl + getIngredientValue);
+        //reset the input field
+        document.querySelector('#inputForIngredient').value = '';
+    };
+
 });
 
 const ingredientUrl = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=';

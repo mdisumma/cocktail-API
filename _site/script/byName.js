@@ -1,13 +1,17 @@
 // event
 const getByName = document.getElementById("srcName").addEventListener("click",
     function getValue(event) {
-        //prevent to reload the page (form tag) 
-        // event.preventDefault()
+        const nameResult = document.querySelector('#byName')
         const getValue = document.getElementById("inputForName").value;
-        console.log(getValue)
-        //reset the input field
-        document.querySelector('#inputForName').value = '';
-        nameRequest(nameUrl + getValue);
+        if (getValue === '') {
+            console.log('enter a  drink')
+            nameResult.outerHTML = ' <div id="byName">please, enter a valid cocktail name</div>'
+        } else {
+            nameResult.outerHTML = ' <div id="byName"></div>'
+            nameRequest(nameUrl + getValue);
+            //reset the input field
+            document.querySelector('#inputForName').value = '';
+        }
     });
 
 // define api url
