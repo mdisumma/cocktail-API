@@ -7,11 +7,12 @@ html {
     font-size:16px;
 }
 .helpText {
-    color: rgb(254, 140, 0);
+    color: rgb(255, 93, 5);
     text-align: center;
 }
 body {
-    background-color: rgb(204, 254, 154);
+    color: rgb(255, 134, 5);
+    background-color:black;
     margin:0 auto;
     min-width: 360px;
     max-width: 1000px;
@@ -40,7 +41,7 @@ body {
             margin-top:1em;
             font-size: 1.2;
             padding: 0;
-            background-color:rgb(236, 255, 216);
+            background-color:rgb(48, 48, 48);
             figcaption {
                 
                 padding: 0.5em;
@@ -49,8 +50,12 @@ body {
             img {
                 width:300px;
             }
+            
         }
-    }
+        figure:hover {
+            border:1px solid  rgb(255, 134, 5);
+        }
+
     .cocktailGallery {
         
         h2{
@@ -60,6 +65,7 @@ body {
         }
         
     }    
+}
 }   
 @media (min-width: 760px) {
     body {

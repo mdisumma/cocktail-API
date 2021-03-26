@@ -60,7 +60,7 @@ table {
 
 div#cardContainer {
   padding: 1em;
-  background-color: #ecffd8;
+  background-color: #393939;
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
@@ -119,12 +119,13 @@ html {
 }
 
 .helpText {
-  color: #fe8c00;
+  color: #ff5d05;
   text-align: center;
 }
 
 body {
-  background-color: #ccfe9a;
+  color: #ff8605;
+  background-color: black;
   margin: 0 auto;
   min-width: 360px;
   max-width: 1000px;
@@ -153,7 +154,7 @@ body #byIngredient figure, body #listByPopular figure {
   margin-top: 1em;
   font-size: 1.2;
   padding: 0;
-  background-color: #ecffd8;
+  background-color: #303030;
 }
 body #byIngredient figure figcaption, body #listByPopular figure figcaption {
   padding: 0.5em;
@@ -162,7 +163,10 @@ body #byIngredient figure figcaption, body #listByPopular figure figcaption {
 body #byIngredient figure img, body #listByPopular figure img {
   width: 300px;
 }
-body .cocktailGallery h2 {
+body #byIngredient figure:hover, body #listByPopular figure:hover {
+  border: 1px solid #ff8605;
+}
+body #byIngredient .cocktailGallery h2, body #listByPopular .cocktailGallery h2 {
   padding: 1em;
   font-size: 2em;
   text-align: center;
