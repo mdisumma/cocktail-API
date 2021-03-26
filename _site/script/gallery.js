@@ -4,14 +4,14 @@ const selectedUrl = 'https://the-cocktail-db.p.rapidapi.com/popular.php';
 //https://example.p.rapidapi.com/?rapidapi-key=***************************
 
 //get data with axiom
-const getData = async () => {
+const getDataGallery = async () => {
     let { data } = await axios.get(selectedUrl + apiKey)
     return data
 }
 
 // parse data
 document.addEventListener('DOMContentLoaded', async () => {
-    const results = await getData()
+    const results = await getDataGallery()
     console.log(results);
 
 
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const printHTML = document.querySelector('#listByPopular');
         printHTML.innerHTML += `
         <figure>
-            <figcaption>${value.strDrink}</figcaption>
+            <figcaption alt="${value.strDrink}">${value.strDrink} </figcaption>
             <img src="${value.strDrinkThumb}">
         </figure>`;
     }

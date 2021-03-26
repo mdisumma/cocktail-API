@@ -6,9 +6,7 @@ const ifError = (response) => {
 }
 //CHOSE COCKTAIL BY INGREDIENT
 
-const getByIngredient = document.getElementById("srcIngredient").addEventListener("click", function getValue(event) {
-    //prevent to reload the page (form tag) 
-    event.preventDefault()
+const getByIngredient = document.getElementById("srcIngredient").addEventListener("click", function getValue() {
     const ingredientResult = document.querySelector('#byIngredient')
     const getIngredientValue = document.getElementById("inputForIngredient").value;
     console.log(getIngredientValue);

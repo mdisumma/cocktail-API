@@ -1,6 +1,6 @@
 // event
 const getByName = document.getElementById("srcName").addEventListener("click",
-    function getValue(event) {
+    function getValue() {
         const nameResult = document.querySelector('#byName')
         const getValue = document.getElementById("inputForName").value;
         if (getValue === '') {
