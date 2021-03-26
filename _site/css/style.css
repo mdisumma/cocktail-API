@@ -132,7 +132,7 @@ body header #bar {
   animation: bar 1s ease-in-out infinite alternate;
 }
 body main .searchByName, body main .searchByIngredient {
-  padding: 1em;
+  padding: 2em;
   min-width: 320px;
   display: grid;
   grid-template-columns: 60% 30%;
