@@ -10,7 +10,17 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
                     const parsedData = (data);
                     //test for data
                     console.log(parsedData);
-
+                    const headFrame = parsedData.drinks[0].strDrink
+                    const srcFrame = parsedData.drinks[0].strDrinkThumb
+                    const IngredientFrame = ''
+                    const processFrame = parsedData.drinks[0].strInstructions
+                    const cocktailFrame = `
+                <h3>${headFrame}</h3>
+                <img src="${srcFrame}">
+                <ul>${IngredientFrame}</ul>
+                <p>${processFrame}</p> `
+                    frame.innerHTML = cocktailFrame;
+                    console.log(frame)
                 })
         }
         targetRequest(nameUrl + targetImg)
@@ -24,6 +34,17 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
                     const parsedData = (data);
                     //test for data
                     console.log(parsedData);
+                    const headFrame = parsedData.drinks[0].strDrink
+                    const srcFrame = parsedData.drinks[0].strDrinkThumb
+                    const IngredientFrame = ''
+                    const processFrame = parsedData.drinks[0].strInstructions
+                    const cocktailFrame = `
+                    <h3>${headFrame}</h3>
+                    <img src="${srcFrame}">
+                    <ul>${IngredientFrame}</ul>
+                    <p>${processFrame}</p> `
+                    frame.innerHTML = cocktailFrame;
+                    console.log(frame)
 
                 })
         }
