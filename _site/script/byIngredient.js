@@ -15,8 +15,12 @@ const getByIngredient = document.getElementById("srcIngredient").addEventListene
     } else {
         ingredientResult.innerHTML = '';
         ingredientRequest(ingredientUrl + getIngredientValue);
+        console.log(getIngredientValue);
         //reset the input field
-        document.querySelector('#inputForIngredient').value = '';
+        const headValue = document.createElement('h2');
+        headValue.innerText = getIngredientValue;
+        const printHeadValue = document.querySelector('#byIngredient');
+        printHeadValue.append(headValue);
     };
 
 });
@@ -34,12 +38,11 @@ const ingredientRequest = (url) => {
 
                 const printHTML = document.querySelector('#byIngredient');
                 printHTML.innerHTML += `
-                <a>
                 <figure>
                     <figcaption>${value.strDrink}</figcaption>
                     <img src="${value.strDrinkThumb}">
                 </figure>
-            </a>`;
+          `;
             }
         })
 }

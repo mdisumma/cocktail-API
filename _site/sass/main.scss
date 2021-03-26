@@ -15,6 +15,7 @@ body {
        align-items: center;
        height:10vh;
        h1 {
+        text-transform: uppercase;
         font-size: 3em;
         text-align: center;
         }
@@ -37,7 +38,15 @@ body {
                  grid-column: 1/3;
                 }
         }   
-    
+        #byIngredient h2 {
+            text-transform: uppercase;
+            width: 100%;
+            border-top: 1px solid rgb(255, 134, 5) ;
+            padding:1em;
+            font-size: 2em;
+            text-align: center;
+            
+        }
         #byIngredient, #listByPopular{
             padding-bottom:2em;
             display:flex;
@@ -60,7 +69,9 @@ body {
                 border:1px solid  rgb(255, 134, 5);
             }
         }
+        
         .cocktailGallery h2 {
+            text-transform: uppercase;
             border-top: 1px solid rgb(255, 134, 5) ;
             padding:1em;
             font-size: 2em;
