@@ -47,6 +47,9 @@ body {
                     font-size: 0.8em;
                  grid-column: 1/3;
                 }
+                button {
+                    cursor: pointer; 
+                }
         }   
         #byIngredient h2 {
             font-family: 'Averia Serif Libre', cursive;
@@ -64,6 +67,7 @@ body {
             flex-wrap: wrap;
             justify-content: space-evenly;
             figure {
+                cursor: pointer;
                 margin-top:1em;
                 font-size: 1.2;
                 padding: 0;

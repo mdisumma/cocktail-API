@@ -150,6 +150,9 @@ body main .searchByName label, body main .searchByIngredient label {
   font-size: 0.8em;
   grid-column: 1/3;
 }
+body main .searchByName button, body main .searchByIngredient button {
+  cursor: pointer;
+}
 body main #byIngredient h2 {
   font-family: "Averia Serif Libre", cursive;
   text-transform: uppercase;
@@ -166,6 +169,7 @@ body main #byIngredient, body main #listByPopular {
   justify-content: space-evenly;
 }
 body main #byIngredient figure, body main #listByPopular figure {
+  cursor: pointer;
   margin-top: 1em;
   font-size: 1.2;
   padding: 0;
