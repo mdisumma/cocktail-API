@@ -1,4 +1,6 @@
-
+#byName {
+    text-align: center;
+}
 div#cardContainer {
     padding: 1em;
     background-color:rgb(57, 57, 57); 
@@ -26,10 +28,6 @@ div#cardContainer {
     } 
 }
 @media (min-width: 900px) {
-    #byName {
-        text-align: center;
-    }
-
     div#cardContainer {
         padding:1em;
         display:grid;
