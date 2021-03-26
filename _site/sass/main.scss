@@ -1,9 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap');
+
+
 @import 'resetCSS';
 @import 'card';
 
 body {
-    font-family:  'Comic Neue',Arial,; 
+    font-family: 'Averia Serif Libre', cursive;
     color: rgb(255, 134, 5);
     background-color:black;
     margin:0 auto;
@@ -116,16 +119,15 @@ body {
             display:flex;
             justify-content: space-between;
            
-        } 
-        
+        }    
     } 
 }
 
   @keyframes bar {
     from {
-      text-shadow: 0 0 4px #fff, 0 0 8px rgb(255, 192, 125), 0 0 12px rgb(255, 134, 5), 0 0 16px  rgb(255, 134, 5), 0 0 18px  rgb(255, 134, 5);
+      text-shadow: 0 0 1px rgb(255, 240, 224), 0 0 2px rgb(255, 192, 125), 0 0 3px rgb(255, 134, 5), 0 0 4px   rgb(255, 192, 125), 0 0 5px   rgb(255, 240, 224);
     }
     to {
-      text-shadow: 0 0 2px #fff, rgb(255, 192, 125), 0 0 6px rgb(255, 134, 5), 0 0 8px  rgb(255, 134, 5), 0 0 10px rgb(255, 134, 5);
+      text-shadow: 0 0 2px  rgb(255, 240, 224), 0 0 4px rgb(255, 192, 125), 0 0 6px rgb(255, 134, 5), 0 0 8px  rgb(255, 192, 125), 0 0 10px rgb(255, 240, 224);
     }
 }

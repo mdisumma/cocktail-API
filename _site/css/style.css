@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -108,7 +109,7 @@ div#cardContainer .hide {
   }
 }
 body {
-  font-family: "Comic Neue", Arial;
+  font-family: "Averia Serif Libre", cursive;
   color: #ff8605;
   background-color: black;
   margin: 0 auto;
@@ -219,10 +220,10 @@ body footer p {
 }
 @keyframes bar {
   from {
-    text-shadow: 0 0 4px #fff, 0 0 8px #ffc07d, 0 0 12px #ff8605, 0 0 16px #ff8605, 0 0 18px #ff8605;
+    text-shadow: 0 0 1px #fff0e0, 0 0 2px #ffc07d, 0 0 3px #ff8605, 0 0 4px #ffc07d, 0 0 5px #fff0e0;
   }
   to {
-    text-shadow: 0 0 2px #fff, #ffc07d, 0 0 6px #ff8605, 0 0 8px #ff8605, 0 0 10px #ff8605;
+    text-shadow: 0 0 2px #fff0e0, 0 0 4px #ffc07d, 0 0 6px #ff8605, 0 0 8px #ffc07d, 0 0 10px #fff0e0;
   }
 }
 
