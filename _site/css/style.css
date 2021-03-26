@@ -132,7 +132,7 @@ body header #bar {
   animation: bar 1s ease-in-out infinite alternate;
 }
 body main .searchByName, body main .searchByIngredient {
-  padding: 2em;
+  padding: 1.5em;
   min-width: 320px;
   display: grid;
   grid-template-columns: 60% 30%;
@@ -143,7 +143,7 @@ body main .searchByName label, body main .searchByIngredient label {
   grid-column: 1/3;
 }
 body main #byIngredient, body main #listByPopular {
-  padding: 1em;
+  padding-bottom: 2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

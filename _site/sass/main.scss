@@ -1,5 +1,4 @@
 
-
 @import 'resetCSS';
 @import 'card';
 
@@ -28,7 +27,7 @@ body {
     }
     main {
         .searchByName, .searchByIngredient {
-            padding: 2em;
+            padding: 1.5em;
             min-width: 320px;
             display:grid;
             grid-template-columns: 60% 30% ;
@@ -40,7 +39,7 @@ body {
         }   
     
         #byIngredient, #listByPopular{
-            padding: 1em;
+            padding-bottom:2em;
             display:flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -50,14 +49,12 @@ body {
                 padding: 0;
                 background-color:rgb(48, 48, 48);
                 figcaption {
-                    
                     padding: 0.5em;
                     text-align:center;
                 } 
                 img {
                     width:300px;
-                }
-                
+                } 
             }
             figure:hover {
                 border:1px solid  rgb(255, 134, 5);
