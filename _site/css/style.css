@@ -70,7 +70,7 @@ div#cardContainer h3 {
   text-align: center;
 }
 div#cardContainer img {
-  margin: 1em;
+  margin: 1em auto;
   max-width: 90%;
 }
 div#cardContainer ul, div#cardContainer p {
