@@ -11,7 +11,7 @@ const getByIngredient = document.getElementById("srcIngredient").addEventListene
     const getIngredientValue = document.getElementById("inputForIngredient").value;
     console.log(getIngredientValue);
     if (getIngredientValue === '') {
-        ingredientResult.innerHTML = '<span class="helpText">please, enter a valid cocktail ingredient</span>';
+        ingredientResult.innerHTML = '<span class="helpText">please, enter a valid ingredient name</span>';
     } else {
         ingredientResult.innerHTML = '';
         ingredientRequest(ingredientUrl + getIngredientValue);
