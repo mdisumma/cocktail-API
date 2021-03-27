@@ -1,7 +1,7 @@
 frame.style.display = 'none'
 const getCard = document.querySelector('#listByPopular').addEventListener('click', function (e) {
     console.log(e)
-    // e.cancelBubble = true;
+    e.cancelBubble = true;
     const frame = document.querySelector('#frame')
     if (frame.style.display === 'none') {
         frame.style.display = 'grid'
@@ -91,16 +91,16 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
             targetRequest(nameUrl + targetText)
         }
     }
-    // else {
-    //     const checkframe = document.querySelector('#frame')
-    //     if (checkframe.style.display === 'grid') {
-    //         frame.style.display = 'none';
-    //     }
-    // }
-}, false)
-// const hideCard = window.addEventListener('click', function (e) {
-//     const checkframe = document.querySelector('#frame')
-//     if (checkframe.style.display === 'grid') {
-//         frame.style.display = 'none';
-//     }
-// }, false)
+    else {
+        const checkframe = document.querySelector('#frame')
+        if (checkframe.style.display === 'grid') {
+            frame.style.display = 'none';
+        }
+    }
+}, true)
+const hideCard = window.addEventListener('click', function (e) {
+    const checkframe = document.querySelector('#frame')
+    if (checkframe.style.display === 'grid') {
+        frame.style.display = 'none';
+    }
+}, true)
