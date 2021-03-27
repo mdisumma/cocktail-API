@@ -1,17 +1,17 @@
 
  
 div#frame {
-    // position:fixed;
-    // top:0%;
-    // left:0%;
+    position:fixed;
+    top:0%;
+    left:0%;
     width:100%;
     background-color:rgb(57, 57, 57); 
     display:grid;
     grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
-    // display: none;
-    // z-index: 100;
+    display: none;
+    z-index: 100;
    h3 {
     padding: 1em;
     font-size:1.4em;
