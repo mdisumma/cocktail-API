@@ -86,7 +86,7 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
                                 givesClass.add('hide')
                             }
                         }
-                    })
+                    })//cancel event
             }
             targetRequest(nameUrl + targetImg)
 
