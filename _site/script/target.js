@@ -3,7 +3,7 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
     console.log(e)
     e.cancelBubble = true;
     const frame = document.querySelector('#frame')
-    if ((frame.style.display === 'none') && (e.target.localName === "figcaption")) {
+    if (frame.style.display === 'none' && e.target.localName === "figcaption") {
         frame.style.display = 'grid'
 
         let targetImg = e.path[1].children[0].innerHTML
