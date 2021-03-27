@@ -1,4 +1,4 @@
-frame.style.display = 'none'
+// frame.style.display = 'none'
 const getCard = document.querySelector('#listByPopular').addEventListener('click', function (e) {
     console.log(e)
     e.cancelBubble = true;
