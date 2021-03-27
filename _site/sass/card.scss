@@ -2,12 +2,11 @@
     text-align: center;
 }
 div#cardContainer {
-    // box-sizing: border-box;
+    display: grid;
     padding: 1em;
     background-color:rgb(57, 57, 57); 
     display:grid;
     text-align: center;
-  
     grid-template-columns: 1fr;
    h3 {
     font-size:1.4em;
@@ -15,14 +14,12 @@ div#cardContainer {
    }
     img {
        margin:1em auto;
-       max-width:90%;
-      
+       max-width:90%; 
     }
     ul, p {
         font-size:1.2em;
         text-align: start;
-        margin:1 0em;
-        
+        margin:1 0em;   
     }
     .hide {
         display:none;
@@ -55,7 +52,6 @@ div#cardContainer {
             grid-column: 2/3;
             grid-row: 3/4;
         }
-
     }
 }
 
