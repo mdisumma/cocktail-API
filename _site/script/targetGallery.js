@@ -6,7 +6,7 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
     if (frame.style.display === 'none') {
         frame.style.display = 'grid'
         if (e.target.localName === 'img' || e.target.localName === 'figcaption') {
-            let targetText = e.path[1].outerText
+            let targetText = e.path[1].childNodes[1].innerHTML
             // console.log(targetText)
             const targetRequest = (url) => {
                 fetch(url)
