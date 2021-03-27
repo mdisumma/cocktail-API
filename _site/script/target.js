@@ -4,7 +4,7 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
     e.cancelBubble = true;
     const frame = document.querySelector('#frame')
     if (frame.style.display === 'none') {
-        frame.style.display = 'grid'
+        frame.style.display = 'block'
         if (e.target.localName === 'img') {
             let targetImg = e.path[1].children[0].innerHTML
             console.log(targetImg)

@@ -2,9 +2,8 @@
 div#frame {
   padding: 1em;
   background-color: #393939;
-  display: grid;
   text-align: center;
-  grid-template-columns: 1fr;
+  display: none;
 }
 div#frame h3 {
   font-size: 1.4em;
@@ -111,7 +110,7 @@ table {
 }
 
 div#cardContainer {
-  display: grid;
+  display: block;
   padding: 1em;
   background-color: #393939;
   display: grid;

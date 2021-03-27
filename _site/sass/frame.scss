@@ -1,14 +1,13 @@
 
  
 div#frame {
-    // display: none;
+   
     padding: 1em;
     background-color:rgb(57, 57, 57); 
-    display:grid;
+    // display:grid;
+    // grid-template-columns: 1fr;
     text-align: center;
- 
-  
-    grid-template-columns: 1fr;
+    display: none;
    h3 {
     font-size:1.4em;
     text-align: center;
