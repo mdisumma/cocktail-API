@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
 div#frame {
-  box-sizing: border-box;
-  width: 100%;
-  left: 0;
-  position: fixed;
-  margin: auto;
-  display: none;
   padding: 1em;
   background-color: #393939;
   display: grid;

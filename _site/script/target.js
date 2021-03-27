@@ -1,9 +1,9 @@
 frame.style.display = 'none'
 const getCard = document.querySelector('#listByPopular').addEventListener('click', function (e) {
+    console.log(e)
+    e.cancelBubble = true;
     const frame = document.querySelector('#frame')
-    if (frame.style.display === 'grid') {
-        frame.style.display = 'none';
-    } else {
+    if (frame.style.display === 'none') {
         frame.style.display = 'grid'
         if (e.target.localName === 'img') {
             let targetImg = e.path[1].children[0].innerHTML
@@ -178,5 +178,10 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
             targetRequest(nameUrl + targetcaption)
         }
     }
-})
-
+}, false)
+const hideCard = window.addEventListener('click', function (e) {
+    const checkframe = document.querySelector('#frame')
+    if (checkframe.style.display === 'grid') {
+        frame.style.display = 'none';
+    }
+}, false)
