@@ -11,6 +11,7 @@ div#frame {
     text-align: center;
     display: none;
    h3 {
+    padding: 0.5em;
     font-size:1.4em;
     text-align: center;
    }
@@ -33,7 +34,6 @@ div#frame {
 @media (min-width: 900px) {
     div#frame{
         box-sizing: border-box;
-        padding:1em;
         top:15%;
         left:5%;
         width: 90%;
@@ -41,12 +41,11 @@ div#frame {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 10% 50% 40%;
         h3 {
-            padding-top: 0.5em;
+            padding: 1em;
             grid-column: 2/3;
             
         }
         img {
-            margin:0;
             justify-content: center;
             width:100%;
             grid-column: 1/2;
