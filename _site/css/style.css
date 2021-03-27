@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
 div#frame {
-  padding: 1em;
   position: fixed;
   top: 5%;
   left: 5%;
@@ -12,6 +11,7 @@ div#frame {
   display: none;
 }
 div#frame h3 {
+  padding: 1em;
   font-size: 1.4em;
   text-align: center;
 }
@@ -118,13 +118,13 @@ table {
 }
 
 div#cardContainer {
-  padding: 1em;
   background-color: #393939;
   display: grid;
   text-align: center;
   grid-template-columns: 1fr;
 }
 div#cardContainer h3 {
+  padding: 1em;
   font-size: 1.4em;
   text-align: center;
 }
