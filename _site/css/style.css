@@ -132,10 +132,10 @@ div#cardContainer img {
   margin: 0.5em auto;
   max-width: 90%;
 }
-div#cardContainer ul, div#cardContainer p {
+div#cardContainer p {
+  padding-top: 1em;
   font-size: 1.2em;
   text-align: start;
-  margin: 1px;
 }
 div#cardContainer .hide {
   display: none;

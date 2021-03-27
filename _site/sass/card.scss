@@ -15,10 +15,12 @@ div#cardContainer {
        margin:0.5em auto;
        max-width:90%; 
     }
-    ul, p {
+     p {
+        
+        padding-top:1em;  
         font-size:1.2em;
         text-align: start;
-        margin:1px;   
+         
     }
     .hide {
         display:none;
