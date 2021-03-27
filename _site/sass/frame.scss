@@ -1,15 +1,19 @@
 
  
 div#frame {
-    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    // max-width: 1000;
+    left: 0;
+    top: 0;
     position:fixed;
-    top:0;
-    left:0;
+    margin: auto;
     display: none;
     padding: 1em;
     background-color:rgb(57, 57, 57); 
     display:grid;
     text-align: center;
+ 
   
     grid-template-columns: 1fr;
    h3 {
@@ -22,6 +26,7 @@ div#frame {
       
     }
     ul, p {
+        padding:1em;
         font-size:1.2em;
         text-align: start;
         margin:1 0em;

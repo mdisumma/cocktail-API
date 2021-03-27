@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
 div#frame {
-  max-width: 100%;
-  position: fixed;
-  top: 0;
+  box-sizing: border-box;
+  width: 100%;
   left: 0;
+  top: 0;
+  position: fixed;
+  margin: auto;
   display: none;
   padding: 1em;
   background-color: #393939;
@@ -20,6 +22,7 @@ div#frame img {
   max-width: 90%;
 }
 div#frame ul, div#frame p {
+  padding: 1em;
   font-size: 1.2em;
   text-align: start;
   margin: 1 0em;
@@ -115,6 +118,7 @@ table {
 }
 
 div#cardContainer {
+  box-sizing: border-box;
   padding: 1em;
   background-color: #393939;
   display: grid;
@@ -238,9 +242,6 @@ body main #byIngredient figure figcaption, body main #listByPopular figure figca
 }
 body main #byIngredient figure img, body main #listByPopular figure img {
   width: 300px;
-}
-body main #byIngredient figure:hover, body main #listByPopular figure:hover {
-  border: 1px solid #ff8605;
 }
 body main .cocktailGallery h2 {
   font-family: "Averia Serif Libre", cursive;
