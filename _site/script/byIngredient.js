@@ -15,7 +15,7 @@ const getByIngredient = document.getElementById("srcIngredient").addEventListene
     } else {
         ingredientResult.innerHTML = '';
         ingredientRequest(ingredientUrl + getIngredientValue);
-        console.log(getIngredientValue);
+        // console.log(getIngredientValue);
         //reset the input field
         const headValue = document.createElement('h2');
         headValue.innerText = getIngredientValue;
@@ -32,7 +32,7 @@ const ingredientRequest = (url) => {
         .then((response) => ifError(response))//test for errors
         .then((data) => {
             const ingredientData = (data);
-            console.log(ingredientData);
+            // console.log(ingredientData);
 
             for (const value of ingredientData.drinks) {
 

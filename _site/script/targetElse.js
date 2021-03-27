@@ -1,5 +1,5 @@
 frame.style.display = 'none'
-const getCard = document.querySelector('#listByPopular').addEventListener('click', function (e) {
+const getCard = document.querySelector('#Byingredient').addEventListener('click', function (e) {
     console.log(e)
     e.cancelBubble = true;
     const frame = document.querySelector('#frame')

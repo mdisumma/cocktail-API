@@ -1,4 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
+div#frameIngredient {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: #393939;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  text-align: center;
+  z-index: 100;
+}
+div#frameIngredient h3 {
+  padding: 1em;
+  font-size: 1.4em;
+  text-align: center;
+}
+div#frameIngredient img {
+  margin: auto;
+  width: 60%;
+}
+div#frameIngredient ul, div#frameIngredient p {
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  text-align: start;
+  margin: 1 0em;
+}
+div#frameIngredient .hide {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  div#frameIngredient {
+    box-sizing: border-box;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 50% 40%;
+  }
+  div#frameIngredient h3 {
+    padding: 1em;
+    grid-column: 2/3;
+  }
+  div#frameIngredient img {
+    justify-content: center;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  div#frameIngredient ul {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  div#frameIngredient p {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
 div#frame {
   position: fixed;
   top: 0%;
