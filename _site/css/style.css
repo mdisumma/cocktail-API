@@ -11,7 +11,7 @@ div#frame {
   display: none;
 }
 div#frame h3 {
-  padding: 0.5em;
+  padding-top: 1em;
   font-size: 1.4em;
   text-align: center;
 }
