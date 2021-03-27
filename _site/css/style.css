@@ -135,7 +135,7 @@ div#cardContainer img {
 div#cardContainer ul, div#cardContainer p {
   font-size: 1.2em;
   text-align: start;
-  margin: 1;
+  margin: 1px;
 }
 div#cardContainer .hide {
   display: none;
