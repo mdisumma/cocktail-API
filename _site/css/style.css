@@ -3,7 +3,7 @@ div#frame {
   position: fixed;
   top: 0%;
   left: 0%;
-  height: 100%;
+  height: 100vh;
   background-color: #393939;
   display: grid;
   grid-template-columns: 1fr;
