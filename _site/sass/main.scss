@@ -80,6 +80,11 @@ body {
                     width:300px;
                 } 
             }
+            figure:hover {
+                h3 {
+                    border:1px solid rgb(255, 134, 5);
+                }
+            }
         }
         .cocktailGallery h2 {
             font-family: 'Averia Serif Libre', cursive;
