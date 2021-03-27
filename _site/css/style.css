@@ -243,9 +243,6 @@ body main #byIngredient figure figcaption, body main #listByPopular figure figca
 body main #byIngredient figure img, body main #listByPopular figure img {
   width: 300px;
 }
-body main #byIngredient figure:hover, body main #listByPopular figure:hover {
-  border: 1px solid #ff8605;
-}
 body main .cocktailGallery h2 {
   font-family: "Averia Serif Libre", cursive;
   text-transform: uppercase;
