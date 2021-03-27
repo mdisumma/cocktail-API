@@ -18,11 +18,11 @@ div#frame h3 {
   text-align: center;
 }
 div#frame img {
-  margin: 0.5em auto;
+  margin: auto;
   width: 60%;
 }
 div#frame ul, div#frame p {
-  padding: 1em;
+  padding: 0.5em 1em;
   font-size: 1.2em;
   text-align: start;
   margin: 1 0em;
@@ -131,11 +131,11 @@ div#cardContainer h3 {
   text-align: center;
 }
 div#cardContainer img {
-  margin: 0.5em auto;
-  max-width: 90%;
+  margin: auto;
+  max-width: 100%;
 }
 div#cardContainer p, div#cardContainer ul {
-  padding: 1em;
+  padding: 0.5em 1em;
   font-size: 1.2em;
   text-align: start;
   margin: 1 0em;
