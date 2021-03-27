@@ -6,7 +6,6 @@ div#frame {
   grid-template-columns: 1fr;
   justify-content: center;
   text-align: center;
-  display: none;
 }
 div#frame h3 {
   padding: 1em;
