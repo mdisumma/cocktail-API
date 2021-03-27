@@ -110,7 +110,6 @@ table {
 }
 
 div#cardContainer {
-  display: block;
   padding: 1em;
   background-color: #393939;
   display: grid;

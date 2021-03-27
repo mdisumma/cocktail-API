@@ -181,7 +181,7 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
 }, false)
 const hideCard = window.addEventListener('click', function (e) {
     const checkframe = document.querySelector('#frame')
-    if (checkframe.style.display === 'grid') {
+    if (checkframe.style.display === 'block') {
         frame.style.display = 'none';
     }
 }, false)
