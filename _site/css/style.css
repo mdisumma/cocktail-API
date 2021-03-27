@@ -2,8 +2,8 @@
 div#frame {
   position: fixed;
   top: 5%;
-  left: 5%;
-  width: 90%;
+  left: 0%;
+  width: 100%;
   background-color: #393939;
   display: grid;
   grid-template-columns: 1fr;
