@@ -129,13 +129,13 @@ div#cardContainer h3 {
   text-align: center;
 }
 div#cardContainer img {
-  margin: 1em auto;
+  margin: 0.5em auto;
   max-width: 90%;
 }
 div#cardContainer ul, div#cardContainer p {
   font-size: 1.2em;
   text-align: start;
-  margin: 1 0em;
+  margin: 1;
 }
 div#cardContainer .hide {
   display: none;
