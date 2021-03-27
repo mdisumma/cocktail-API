@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
 div#frame {
+  position: fixed;
+  top: 5%;
+  left: 0%;
+  width: 100%;
   padding: 1em;
   background-color: #393939;
+  display: grid;
+  grid-template-columns: 1fr;
   text-align: center;
   display: none;
 }
@@ -25,6 +31,9 @@ div#frame .hide {
 
 @media (min-width: 900px) {
   div#frame {
+    top: 15%;
+    left: 5%;
+    width: 90%;
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
