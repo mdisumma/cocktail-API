@@ -1,14 +1,13 @@
 
-   
+ 
 div#frame {
-    position: fixed;
-    top:0;
-    left:0;
-    display:block;
+    position:fixed;
+    display: none;
     padding: 1em;
     background-color:rgb(57, 57, 57); 
     display:grid;
     text-align: center;
+  
     grid-template-columns: 1fr;
    h3 {
     font-size:1.4em;
@@ -23,11 +22,14 @@ div#frame {
         font-size:1.2em;
         text-align: start;
         margin:1 0em;
+        
     }
-    
+    .hide {
+        display:none;
+    } 
 }
 @media (min-width: 900px) {
-    div#frame {
+    div#frame{
         padding:1em;
         display:grid;
         grid-template-columns: 1fr 1fr;
@@ -56,4 +58,3 @@ div#frame {
 
     }
 }
-
