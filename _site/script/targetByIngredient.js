@@ -94,7 +94,9 @@ const getFrameIngredient = document.querySelector('#byIngredient').addEventListe
     else {
         const checkframe = document.querySelector('#frame')
         if (checkframe.style.display === 'grid') {
-            frame.style.display = 'none';
+            checkframe.innerHTML = ""
+            console.log(checkframe.innerHTML)
+            checkframe.style.display = 'none';
         }
     }
 }, false)
