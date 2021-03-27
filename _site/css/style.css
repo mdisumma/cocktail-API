@@ -12,13 +12,13 @@ div#frame {
   display: none;
 }
 div#frame h3 {
-  padding-top: 1em;
+  padding: 1em;
   font-size: 1.4em;
   text-align: center;
 }
 div#frame img {
   margin: 0.5em auto;
-  width: 50%;
+  width: 70%;
 }
 div#frame ul, div#frame p {
   padding: 1em;
@@ -125,7 +125,7 @@ div#cardContainer {
   grid-template-columns: 1fr;
 }
 div#cardContainer h3 {
-  padding-top: 1em;
+  padding: 1em;
   font-size: 1.4em;
   text-align: center;
 }
