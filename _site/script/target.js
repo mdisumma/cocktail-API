@@ -96,10 +96,5 @@ const getCard = document.querySelector('#listByPopular').addEventListener('click
         }
     }
 
-}, true)
-// const hideCard = window.addEventListener('click', function (e) {
-//     const checkframe = document.querySelector('#frame')
-//     if (checkframe.style.display === 'grid') {
-//         frame.style.display = 'none';
-//     }
-// }, false)
+})
+
