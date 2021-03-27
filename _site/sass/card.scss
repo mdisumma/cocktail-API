@@ -19,6 +19,7 @@ div#cardContainer {
         padding:1em;  
         font-size:1.2em;
         text-align: start;
+        margin:1 0em;
          
     }
     .hide {
@@ -37,7 +38,7 @@ div#cardContainer {
             
         }
         img {
-            margin:0;
+         
             justify-content: center;
             width:100%;
             grid-column: 1/2;

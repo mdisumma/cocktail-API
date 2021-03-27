@@ -1,6 +1,7 @@
 
  
 div#frame {
+    padding: 1em;
     position:fixed;
     top:5%;
     left:5%;
@@ -11,12 +12,11 @@ div#frame {
     text-align: center;
     display: none;
    h3 {
-    padding-top: 1em;
     font-size:1.4em;
     text-align: center;
    }
     img {
-       margin:1em auto;
+       margin:0.5em auto;
        max-width:90%;
       
     }
