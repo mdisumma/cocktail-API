@@ -67,18 +67,23 @@ body {
             flex-wrap: wrap;
             justify-content: space-evenly;
             figure {
-                cursor: pointer;
                 margin-top:1em;
                 font-size: 1.2;
                 padding: 0;
                 background-color:rgb(48, 48, 48);
                 figcaption {
+                    cursor: pointer;
                     padding: 0.5em;
                     text-align:center;
                 } 
                 img {
                     width:300px;
                 } 
+            }
+            figure:hover {
+                figcaption {
+                border:1px solid rgb(255, 134, 5);
+                }
             }
         }
         .cocktailGallery h2 {

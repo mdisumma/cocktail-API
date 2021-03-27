@@ -32,6 +32,8 @@ div#frame {
 }
 @media (min-width: 900px) {
     div#frame{
+        box-sizing: border-box;
+        padding:1em;
         top:15%;
         left:5%;
         width: 90%;
