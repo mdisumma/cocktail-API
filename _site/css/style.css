@@ -117,7 +117,6 @@ table {
 }
 
 div#cardContainer {
-  box-sizing: border-box;
   padding: 1em;
   background-color: #393939;
   display: grid;
