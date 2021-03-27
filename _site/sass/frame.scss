@@ -3,9 +3,8 @@
 div#frame {
     position:fixed;
     top:5%;
-    left:0%;
-    width: 100%;
-    padding: 1em;
+    left:5%;
+    width: 90%;
     background-color:rgb(57, 57, 57); 
     display:grid;
     grid-template-columns: 1fr;
@@ -36,7 +35,6 @@ div#frame {
         top:15%;
         left:5%;
         width: 90%;
-        padding:1em;
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 10% 50% 40%;
