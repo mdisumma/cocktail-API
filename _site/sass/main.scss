@@ -1,146 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
+// font-family: 'Averia Serif Libre', cursive;
+// font-family: 'Montserrat', sans-serif;
 
-@import 'resetCSS';
-@import 'frameIngredient';
-@import 'frameGallery';
-@import 'card';
+@import "resetCSS";
+@import "frameIngredient";
+@import "frameGallery";
+@import "card";
 
-    // font-family: 'Averia Serif Libre', cursive;
-    // font-family: 'Montserrat', sans-serif;
+$mainFont: "Montserrat", sans-serif;
+$headeText: "Averia Serif Libre", cursive;
+$textColor: rgb(255, 134, 5);
+$bk: rgb(0, 0, 0);
+$bkFigure: rgb(48, 48, 48);
+$small: 360px;
+$medium: 760px;
+$large: 900px;
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.4em;
-    letter-spacing: 1px;
-    color: rgb(255, 134, 5);
-    background-color:black;
-    margin:0 auto;
-    min-width: 360px;
-    max-width: 1000px;
-    header {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height:10vh;
-        h1 {
-        font-family: 'Averia Serif Libre', cursive;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 2.5em;
-        text-align: center;
-        }
-        #bar {
-          font-weight: 400;
-          margin: 20px;
-          transition: all 2s;
-          animation: bar 1s ease-in-out infinite alternate;
-        }
-    }
-    main {
-        .searchByName, .searchByIngredient {
-            padding: 1.5em;
-            min-width: 320px;
-            display:grid;
-            grid-template-columns: 60% 30% ;
-            grid-gap:0.5em;
-            justify-content: center;
-                label {
-                    font-size: 0.8em;
-                    grid-column: 1/3;
-                }
-                button {
-                    cursor: pointer; 
-                }
-        }   
-        #byIngredient h2 {
-            font-family: 'Averia Serif Libre', cursive;
-            text-transform: uppercase;
-            width: 100%;
-            border-top: 1px solid rgb(255, 134, 5);
-            padding:1em;
-            font-size: 2em;
-            text-align: center;
-            
-        }
-        #byIngredient, #listByPopular{
-            padding-bottom:2em;
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            figure {
-                margin-top:1em;
-                font-size: 1.2;
-                padding: 0;
-                background-color:rgb(48, 48, 48);
-                figcaption {
-                    cursor: pointer;
-                    padding: 0.5em;
-                    text-align:center;
-                } 
-                img {
-                    width:300px;
-                } 
-            }
-            figure:hover {
-                    border:1px solid rgb(255, 134, 5);
-            }
-        }
-        .cocktailGallery h2 {
-            font-family: 'Averia Serif Libre', cursive;
-            text-transform: uppercase;
-            border-top: 1px solid rgb(255, 134, 5) ;
-            padding:1em;
-            font-size: 2em;
-            text-align: center;
-        }  
-    }
-    footer {
-        padding:1em;
-        p{
-            padding:0.5em;
-        }
-    }   
-} 
-
-@media (min-width: 760px) {
-    body {
-        header{
-            padding: 2em;
-            h1 {
-                font-size: 4.5em;
-                justify-content: center;
-            }
-        }
-        section.searchByName, section.searchByIngredient {
-            width: 100%;
-            display: grid;
-            grid-template-columns:40% 20% 20%;
-            justify-content: start;
-            label {
-                font-size: 1.2em;
-                text-align: end;
-                grid-column: 1/2;
-            }
-            input {
-                grid-column: 2/3;   
-            }
-            button {
-                grid-column: 3/4;
-            }
-        }
-        footer {
-            display:flex;
-            justify-content: space-between;
-           
-        }    
-    } 
+	font-family: $mainFont;
+	line-height: 1.4em;
+	letter-spacing: 1px;
+	color: $textColor;
+	background-color: $bk;
+	margin: 0 auto;
+	min-width: 360px;
+	max-width: 1000px;
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 10vh;
+		h1 {
+			font-family: $headeText;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 2.5em;
+			text-align: center;
+		}
+		#bar {
+			font-weight: 400;
+			margin: 20px;
+			transition: all 2s;
+			animation: bar 1s ease-in-out infinite alternate;
+		}
+	}
+	main {
+		.searchByName,
+		.searchByIngredient {
+			padding: 1.5em;
+			min-width: 320px;
+			display: grid;
+			grid-template-columns: 60% 30%;
+			grid-gap: 0.5em;
+			justify-content: center;
+			label {
+				font-size: 0.8em;
+				grid-column: 1/3;
+			}
+			button {
+				cursor: pointer;
+			}
+		}
+		#byIngredient h2 {
+			font-family: "Averia Serif Libre", cursive;
+			text-transform: uppercase;
+			width: 100%;
+			border-top: 1px solid $textColor;
+			padding: 1em;
+			font-size: 2em;
+			text-align: center;
+		}
+		#byIngredient,
+		#listByPopular {
+			padding-bottom: 2em;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			figure {
+				margin-top: 1em;
+				font-size: 1.2;
+				padding: 0;
+				background-color: $bkFigure;
+				figcaption {
+					cursor: pointer;
+					padding: 0.5em;
+					text-align: center;
+				}
+				img {
+					width: 300px;
+				}
+			}
+			figure:hover {
+				border: 1px solid $textColor;
+			}
+		}
+		.cocktailGallery h2 {
+			font-family: "Averia Serif Libre", cursive;
+			text-transform: uppercase;
+			border-top: 1px solid $textColor;
+			padding: 1em;
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+	footer {
+		padding: 1em;
+		p {
+			padding: 0.5em;
+		}
+	}
 }
 
-  @keyframes bar {
-    from {
-      text-shadow: 0 0 1px rgb(255, 240, 224), 0 0 2px rgb(255, 192, 125), 0 0 3px rgb(255, 134, 5), 0 0 4px   rgb(255, 192, 125), 0 0 5px   rgb(255, 240, 224);
-    }
-    to {
-      text-shadow: 0 0 2px  rgb(255, 240, 224), 0 0 4px rgb(255, 192, 125), 0 0 6px rgb(255, 134, 5), 0 0 8px  rgb(255, 192, 125), 0 0 10px rgb(255, 240, 224);
-    }
+@media (min-width: $medium) {
+	body {
+		header {
+			padding: 2em;
+			h1 {
+				font-size: 4.5em;
+				justify-content: center;
+			}
+		}
+		section.searchByName,
+		section.searchByIngredient {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 40% 20% 20%;
+			justify-content: start;
+			label {
+				font-size: 1.2em;
+				text-align: end;
+				grid-column: 1/2;
+			}
+			input {
+				grid-column: 2/3;
+			}
+			button {
+				grid-column: 3/4;
+			}
+		}
+		footer {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+@keyframes bar {
+	from {
+		text-shadow: 0 0 1px rgb(255, 240, 224), 0 0 2px rgb(255, 192, 125),
+			0 0 3px rgb(255, 134, 5), 0 0 4px rgb(255, 192, 125),
+			0 0 5px rgb(255, 240, 224);
+	}
+	to {
+		text-shadow: 0 0 2px rgb(255, 240, 224), 0 0 4px rgb(255, 192, 125),
+			0 0 6px rgb(255, 134, 5), 0 0 8px rgb(255, 192, 125),
+			0 0 10px rgb(255, 240, 224);
+	}
 }

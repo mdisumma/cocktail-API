@@ -1,58 +1,63 @@
+$mainFont: "Montserrat", sans-serif;
+$textColor: rgb(255, 134, 5);
+$bk: rgb(0, 0, 0);
+$bkFigure: rgb(48, 48, 48);
+$small: 360px;
+$medium: 760px;
+$large: 900px;
+
 #byName {
-    text-align: center;
+	text-align: center;
 }
 div#cardContainer {
-    background-color:rgb(57, 57, 57); 
-    display:grid;
-    text-align: center;
-    grid-template-columns: 1fr;
-   h3 {
-    padding: 1em;
-    font-size:1.4em;
-    text-align: center;
-   }
-    img {
-       margin:auto;
-       max-width:100%; 
-    }
-     p, ul{
-        padding:0.5em 1em;  
-        font-size:1.2em;
-        text-align: start;
-        margin:1 0em;
-         
-    }
-    .hide {
-        display:none;
-    } 
+	background-color: rgb(57, 57, 57);
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr;
+	h3 {
+		padding: 1em;
+		font-size: 1.4em;
+		text-align: center;
+	}
+	img {
+		margin: auto;
+		max-width: 100%;
+	}
+	p,
+	ul {
+		padding: 0.5em 1em;
+		font-size: 1.2em;
+		text-align: start;
+		margin: 1 0em;
+	}
+	.hide {
+		display: none;
+	}
 }
-@media (min-width: 900px) {
-    div#cardContainer {
-        padding:1em;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10% 50% 40%;
-        h3 {
-            padding-top: 0.5em;
-            grid-column: 2/3;
-            
-        }
-        img {
-         
-            justify-content: center;
-            width:100%;
-            grid-column: 1/2;
-            grid-row: 1/4;
-        }
-        ul {
-            grid-column: 2/3;
-            grid-row: 2/3;
-        }
-        p {
-            display:flex;
-            grid-column: 2/3;
-            grid-row: 3/4;
-        }
-    }
+@media (min-width: $large) {
+	div#cardContainer {
+		padding: 1em;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 10% 50% 40%;
+		h3 {
+			padding-top: 0.5em;
+			grid-column: 2/3;
+		}
+		img {
+			justify-content: center;
+			width: 100%;
+			grid-column: 1/2;
+			grid-row: 1/4;
+		}
+		ul {
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+		p {
+			display: flex;
+			grid-column: 2/3;
+			grid-row: 3/4;
+		}
+	}
 }
-
