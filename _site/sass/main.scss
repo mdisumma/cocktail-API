@@ -73,69 +73,51 @@ body {
 				}
 			}
 			figure:hover {
-				border: 1px solid $textColor;
+				figcaption {
+					text-decoration: underline;
+				}
 			}
-		}
-		.cocktailGallery h2 {
-			font-family: "Averia Serif Libre", cursive;
-			text-transform: uppercase;
-			border-top: 1px solid $textColor;
-			padding: 1em;
-			font-size: 2em;
-			text-align: center;
-		}
-	}
-	footer {
-		padding: 1em;
-		p {
-			padding: 0.5em;
-		}
-	}
-}
-
-@media (min-width: $medium) {
-	body {
-		header {
-			padding: 2em;
-			h1 {
-				font-size: 4.5em;
-				justify-content: center;
-			}
-		}
-		section.searchByName,
-		section.searchByIngredient {
-			width: 100%;
-			display: grid;
-			grid-template-columns: 40% 20% 20%;
-			justify-content: start;
-			label {
-				font-size: 1.2em;
-				text-align: end;
-				grid-column: 1/2;
-			}
-			input {
-				grid-column: 2/3;
-			}
-			button {
-				grid-column: 3/4;
+			.cocktailGallery h2 {
+				font-family: "Averia Serif Libre", cursive;
+				text-transform: uppercase;
+				border-top: 1px solid $textColor;
+				padding: 1em;
+				font-size: 2em;
+				text-align: center;
 			}
 		}
 		footer {
-			display: flex;
-			justify-content: space-between;
+			padding: 1em;
+			p {
+				padding: 0.5em;
+			}
 		}
 	}
-}
 
-@keyframes bar {
-	from {
-		text-shadow: 0 0 1px rgb(255, 240, 224), 0 0 2px rgb(255, 192, 125),
-			0 0 3px rgb(255, 134, 5), 0 0 4px rgb(255, 192, 125),
-			0 0 5px rgb(255, 240, 224);
-	}
-	to {
-		text-shadow: 0 0 2px rgb(255, 240, 224), 0 0 4px rgb(255, 192, 125),
-			0 0 6px rgb(255, 134, 5), 0 0 8px rgb(255, 192, 125),
-			0 0 10px rgb(255, 240, 224);
+	@media (min-width: $medium) {
+		body {
+			section.searchByName,
+			section.searchByIngredient {
+				width: 100%;
+				display: grid;
+				grid-template-columns: 40% 20% 20%;
+				justify-content: start;
+				label {
+					font-size: 1.2em;
+					text-align: end;
+					grid-column: 1/2;
+				}
+				input {
+					grid-column: 2/3;
+				}
+				button {
+					grid-column: 3/4;
+				}
+			}
+			footer {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
 	}
 }

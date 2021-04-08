@@ -296,11 +296,12 @@ body main #byIngredient figure img,
 body main #listByPopular figure img {
   width: 300px;
 }
-body main #byIngredient figure:hover,
-body main #listByPopular figure:hover {
-  border: 1px solid #ff8605;
+body main #byIngredient figure:hover figcaption,
+body main #listByPopular figure:hover figcaption {
+  text-decoration: underline;
 }
-body main .cocktailGallery h2 {
+body main #byIngredient .cocktailGallery h2,
+body main #listByPopular .cocktailGallery h2 {
   font-family: "Averia Serif Libre", cursive;
   text-transform: uppercase;
   border-top: 1px solid #ff8605;
@@ -308,53 +309,37 @@ body main .cocktailGallery h2 {
   font-size: 2em;
   text-align: center;
 }
-body footer {
+body main footer {
   padding: 1em;
 }
-body footer p {
+body main footer p {
   padding: 0.5em;
 }
-
 @media (min-width: 760px) {
-  body header {
-    padding: 2em;
-  }
-  body header h1 {
-    font-size: 4.5em;
-    justify-content: center;
-  }
-  body section.searchByName,
-body section.searchByIngredient {
+  body body section.searchByName,
+body body section.searchByIngredient {
     width: 100%;
     display: grid;
     grid-template-columns: 40% 20% 20%;
     justify-content: start;
   }
-  body section.searchByName label,
-body section.searchByIngredient label {
+  body body section.searchByName label,
+body body section.searchByIngredient label {
     font-size: 1.2em;
     text-align: end;
     grid-column: 1/2;
   }
-  body section.searchByName input,
-body section.searchByIngredient input {
+  body body section.searchByName input,
+body body section.searchByIngredient input {
     grid-column: 2/3;
   }
-  body section.searchByName button,
-body section.searchByIngredient button {
+  body body section.searchByName button,
+body body section.searchByIngredient button {
     grid-column: 3/4;
   }
-  body footer {
+  body body footer {
     display: flex;
     justify-content: space-between;
-  }
-}
-@keyframes bar {
-  from {
-    text-shadow: 0 0 1px #fff0e0, 0 0 2px #ffc07d, 0 0 3px #ff8605, 0 0 4px #ffc07d, 0 0 5px #fff0e0;
-  }
-  to {
-    text-shadow: 0 0 2px #fff0e0, 0 0 4px #ffc07d, 0 0 6px #ff8605, 0 0 8px #ffc07d, 0 0 10px #fff0e0;
   }
 }
 
