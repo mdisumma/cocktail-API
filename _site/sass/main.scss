@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 // font-family: 'Averia Serif Libre', cursive;
 // font-family: 'Montserrat', sans-serif;
 
@@ -8,7 +9,6 @@
 @import "card";
 
 $mainFont: "Montserrat", sans-serif;
-$headeText: "Averia Serif Libre", cursive;
 $textColor: rgb(255, 134, 5);
 $bk: rgb(0, 0, 0);
 $bkFigure: rgb(48, 48, 48);
@@ -44,7 +44,6 @@ body {
 			}
 		}
 		#byIngredient h2 {
-			font-family: "Averia Serif Libre", cursive;
 			text-transform: uppercase;
 			width: 100%;
 			border-top: 1px solid $textColor;
@@ -77,15 +76,15 @@ body {
 					text-decoration: underline;
 				}
 			}
-			.cocktailGallery h2 {
-				font-family: "Averia Serif Libre", cursive;
-				text-transform: uppercase;
-				border-top: 1px solid $textColor;
-				padding: 1em;
-				font-size: 2em;
-				text-align: center;
-			}
 		}
+		.cocktailGallery h2 {
+			text-transform: uppercase;
+			border-top: 1px solid $textColor;
+			padding: 1em;
+			font-size: 2em;
+			text-align: center;
+		}
+
 		footer {
 			padding: 1em;
 			p {
