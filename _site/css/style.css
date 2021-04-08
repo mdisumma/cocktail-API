@@ -120,7 +120,7 @@ div#frame {
   top: 0%;
   left: 0%;
   width: 100%;
-  background-color: #393939;
+  background-color: #303030;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -137,7 +137,8 @@ div#frame img {
   margin: auto;
   width: 60%;
 }
-div#frame ul, div#frame p {
+div#frame ul,
+div#frame p {
   padding: 0.5em 1em;
   font-size: 1.2em;
   text-align: start;
@@ -243,25 +244,6 @@ body {
   margin: 0 auto;
   min-width: 360px;
   max-width: 1000px;
-}
-body header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-}
-body header h1 {
-  font-family: "Averia Serif Libre", cursive;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 2.5em;
-  text-align: center;
-}
-body header #bar {
-  font-weight: 400;
-  margin: 20px;
-  transition: all 2s;
-  animation: bar 1s ease-in-out infinite alternate;
 }
 body main .searchByName,
 body main .searchByIngredient {
