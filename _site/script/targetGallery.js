@@ -9,7 +9,7 @@ const getCard = document.querySelector("#listByPopular").addEventListener(
 			frame.style.display = "grid";
 		}
 		if (e.target.localName === "figcaption") {
-			let targetImg = e.path[0].innerText;
+			let targetImg = e.target.innerText;
 			console.log(targetImg);
 			const targetRequest = (url) => {
 				fetch(url)
