@@ -13,7 +13,7 @@
 	stroke-linecap: round;
 	stroke-linejoin: round;
 	stroke-width: 4px;
-	animation: shake 0.5s ease-in 10;
+	animation: shake 0.5s ease-in infinite;
 }
 .limeBar {
 	fill: rgb(255, 134, 5);
