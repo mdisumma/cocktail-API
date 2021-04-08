@@ -105,8 +105,7 @@ const getCard = document.querySelector("#listByPopular").addEventListener(
 );
 const getwindow = document
 	.querySelector("#frame")
-	.addEventListener("click", function (e) {
-		console.log(e);
+	.addEventListener("click", function () {
 		const checkframe = document.querySelector("#frame");
 		if (checkframe.style.display === "grid") {
 			checkframe.innerHTML = "";
