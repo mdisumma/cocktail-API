@@ -103,3 +103,14 @@ const getCard = document.querySelector("#listByPopular").addEventListener(
 	},
 	false
 );
+const getwindow = document
+	.querySelector("#frame")
+	.addEventListener("click", function (e) {
+		console.log(e);
+		const checkframe = document.querySelector("#frame");
+		if (checkframe.style.display === "grid") {
+			checkframe.innerHTML = "";
+			console.log(checkframe.innerHTML);
+			checkframe.style.display = "none";
+		}
+	});
