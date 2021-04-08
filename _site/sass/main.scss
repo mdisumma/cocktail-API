@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-// font-family: 'Averia Serif Libre', cursive;
-// font-family: 'Montserrat', sans-serif;
 
 @import "resetCSS";
 @import "frameIngredient";
@@ -26,97 +24,95 @@ body {
 	min-width: 360px;
 	max-width: 1000px;
 
-	main {
-		.searchByName,
-		.searchByIngredient {
-			padding: 1.5em;
-			min-width: 320px;
-			display: grid;
-			grid-template-columns: 60% 30%;
-			grid-gap: 0.5em;
-			justify-content: center;
-			label {
-				font-size: 0.8em;
-				grid-column: 1/3;
-			}
-			button {
+	.searchByName,
+	.searchByIngredient {
+		padding: 1.5em;
+		min-width: 320px;
+		display: grid;
+		grid-template-columns: 60% 30%;
+		grid-gap: 0.5em;
+		justify-content: center;
+		label {
+			font-size: 0.8em;
+			grid-column: 1/3;
+		}
+		button {
+			cursor: pointer;
+		}
+	}
+	#byIngredient h2 {
+		text-transform: uppercase;
+		width: 100%;
+		border-top: 1px solid $textColor;
+		padding: 1em;
+		font-size: 2em;
+		text-align: center;
+	}
+	#byIngredient,
+	#listByPopular {
+		padding-bottom: 2em;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		figure {
+			margin-top: 1em;
+			font-size: 1.2;
+			padding: 0;
+			background-color: $bkFigure;
+			figcaption {
 				cursor: pointer;
-			}
-		}
-		#byIngredient h2 {
-			text-transform: uppercase;
-			width: 100%;
-			border-top: 1px solid $textColor;
-			padding: 1em;
-			font-size: 2em;
-			text-align: center;
-		}
-		#byIngredient,
-		#listByPopular {
-			padding-bottom: 2em;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-			figure {
-				margin-top: 1em;
-				font-size: 1.2;
-				padding: 0;
-				background-color: $bkFigure;
-				figcaption {
-					cursor: pointer;
-					padding: 0.5em;
-					text-align: center;
-				}
-				img {
-					width: 300px;
-				}
-			}
-			figure:hover {
-				figcaption {
-					text-decoration: underline;
-				}
-			}
-		}
-		.cocktailGallery h2 {
-			text-transform: uppercase;
-			border-top: 1px solid $textColor;
-			padding: 1em;
-			font-size: 2em;
-			text-align: center;
-		}
-
-		footer {
-			padding: 1em;
-			p {
 				padding: 0.5em;
+				text-align: center;
+			}
+			img {
+				width: 300px;
+			}
+		}
+		figure:hover {
+			figcaption {
+				text-decoration: underline;
 			}
 		}
 	}
+	.cocktailGallery h2 {
+		text-transform: uppercase;
+		border-top: 1px solid $textColor;
+		padding: 1em;
+		font-size: 2em;
+		text-align: center;
+	}
 
-	@media (min-width: $medium) {
-		body {
-			section.searchByName,
-			section.searchByIngredient {
-				width: 100%;
-				display: grid;
-				grid-template-columns: 40% 20% 20%;
-				justify-content: start;
-				label {
-					font-size: 1.2em;
-					text-align: end;
-					grid-column: 1/2;
-				}
-				input {
-					grid-column: 2/3;
-				}
-				button {
-					grid-column: 3/4;
-				}
+	footer {
+		padding: 1em;
+		p {
+			padding: 0.5em;
+		}
+	}
+}
+@media (min-width: $medium) {
+	body {
+		.searchByName,
+		.searchByIngredient {
+			width: 100%;
+			display: grid;
+			grid-template-columns: 40% 20% 20%;
+			justify-content: start;
+			label {
+				font-size: 1.2em;
+				text-align: end;
+				grid-column: 1/2;
 			}
-			footer {
-				display: flex;
-				justify-content: space-between;
+			input {
+				grid-column: 2/3;
 			}
+			button {
+				grid-column: 3/4;
+			}
+		}
+
+		footer {
+			display: flex;
+			justify-content: space-between;
 		}
 	}
 }
