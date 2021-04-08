@@ -5,10 +5,11 @@ const getCard = document.querySelector("#listByPopular").addEventListener(
 	function (e) {
 		console.log(e);
 		const frame = document.querySelector("#frame");
-
-		if (e.target.localName === "figcaption" && frame.style.display === "none") {
+		if ((frame.style.display = "none")) {
 			frame.style.display = "grid";
-			let targetImg = e.path[1].children[0].innerText;
+		}
+		if (e.target.localName === "figcaption") {
+			let targetImg = e.path[0].innerText;
 			console.log(targetImg);
 			const targetRequest = (url) => {
 				fetch(url)
