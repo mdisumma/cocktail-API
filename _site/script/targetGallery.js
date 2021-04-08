@@ -9,8 +9,8 @@ const getCard = document.querySelector("#listByPopular").addEventListener(
 			frame.style.display = "grid";
 		}
 		if (e.target.localName === "figcaption") {
-			let targetImg = e.target.innerText;
-			console.log(targetImg);
+			let targetText = e.target.innerText;
+			console.log(targetText);
 			const targetRequest = (url) => {
 				fetch(url)
 					.then((response) => ifError(response)) //test for errors
@@ -91,7 +91,7 @@ const getCard = document.querySelector("#listByPopular").addEventListener(
 						}
 					});
 			};
-			targetRequest(nameUrl + targetImg);
+			targetRequest(nameUrl + targetText);
 		} else {
 			const checkframe = document.querySelector("#frame");
 			if (checkframe.style.display === "grid") {

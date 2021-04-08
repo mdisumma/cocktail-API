@@ -5,15 +5,11 @@ const getFrameIngredient = document
 		"click",
 		function (e) {
 			console.log(e);
-			e.cancelBubble = true;
 			const frameIngredient = document.querySelector("#frame");
 			if (frameIngredient.style.display === "none") {
 				frameIngredient.style.display = "grid";
-				if (
-					e.target.localName === "img" ||
-					e.target.localName === "figcaption"
-				) {
-					let targetText = e.path[1].outerText;
+				if (e.target.localName === "figcaption") {
+					let targetText = e.target.innerText;
 					// console.log(targetText)
 					const targetRequest = (url) => {
 						fetch(url)
@@ -108,3 +104,13 @@ const getFrameIngredient = document
 		},
 		false
 	);
+let getIngredientWindow = document
+	.querySelector("#frame")
+	.addEventListener("click", function () {
+		const checkframe = document.querySelector("#frame");
+		if (checkframe.style.display === "grid") {
+			checkframe.innerHTML = "";
+			console.log(checkframe.innerHTML);
+			checkframe.style.display = "none";
+		}
+	});
