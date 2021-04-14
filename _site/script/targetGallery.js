@@ -5,7 +5,7 @@ const getCard = document.querySelector("#listByPopular").addEventListener(
 	function (e) {
 		console.log(e);
 		const frame = document.querySelector("#frame");
-		if ((frame.style.display = "none")) {
+		if (frame.style.display = "none") {
 			frame.style.display = "grid";
 		}
 		if (e.target.localName === "figcaption") {
