@@ -1,199 +1,36 @@
-.text {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 60px;
-	fill: rgb(255, 134, 5);
-	transform-origin: center;
-	animation: text 10s ease-out;
-	animation-fill-mode: forwards;
-}
-.container {
-	margin: auto;
-	max-width: 600px;
-	width: auto;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+.animation {
 	background-color: black;
+	max-width: 600px;
+	margin: 2em auto;
 }
 
 .shaker {
+	transform-origin: center;
 	fill: none;
 	stroke: rgb(255, 134, 5);
 	stroke-linecap: round;
 	stroke-linejoin: round;
-	stroke-width: 3px;
+	stroke-width: 4px;
+	animation: shake 0.5s ease-in 10;
 }
-#shaker-left {
-	transform-origin: bottom;
-	animation: motion 2s ease-out 4;
-}
-#shaker-rigth {
-	transform-origin: bottom;
-	animation: inverse 2s ease-out 4 1s;
+.limeBar {
+	fill: rgb(255, 134, 5);
+	font-size: 50px;
+	font-family: "Caveat", cursive;
+
+	animation: text 5s ease-out;
 }
 
-.left {
-	animation: transition-left 4s ease-in 2, slide-left 3s linear 9s;
-	animation-fill-mode: forwards;
-}
-.right {
-	animation: transition-rigth 4s ease-in 2 1s, slide-right 3s linear 9s;
-	animation-fill-mode: forwards;
-}
-@keyframes text {
+@keyframes shake {
 	0% {
-		transform: scaleX(0);
+		transform: rotate(0deg);
 	}
-	90% {
-		transform: scaleX(0);
+	25% {
+		transform: rotate(10deg);
 	}
-	100% {
-		transform: scaleX(1) translateY(-100px);
-	}
-}
-@keyframes motion {
-	0% {
-		transform-origin: bottom;
-		transform: scaleY(1);
-	}
-	5% {
-		transform: scaleY(0.7);
-	}
-	15% {
-		transform-origin: bottom;
-		transform: scaleY(1.2);
-	}
-	20% {
-		transform-origin: center;
-		transform: translateY(-40px) scaleY(1) rotate(0deg);
-	}
-	35% {
-		transform: translateY(-130px) rotate(-180deg);
-	}
-	45% {
-		transform: translateY(-110px) rotate(-360deg);
-	}
-	55% {
-		transform: translateY(-100px) rotate(-540deg);
-	}
-	60% {
-		transform: translateY(-90px) rotate(-720deg);
-	}
-	80% {
-		transform-origin: bottom;
-		transform: scaleY(1);
-	}
-	85% {
-		transform-origin: bottom;
-		transform: scaleY(0.9);
-	}
-	90% {
-		transform-origin: bottom;
-		transform: scaleY(1) rotate(0deg);
-	}
-	100% {
-		transform-origin: bottom;
-		transform: scaleY(1) rotate(0deg);
-	}
-}
-
-@keyframes inverse {
-	0% {
-		transform-origin: bottom;
-		transform: scaleY(1);
-	}
-	5% {
-		transform: scaleY(0.7);
-	}
-	15% {
-		transform-origin: bottom;
-		transform: scaleY(1.2);
-	}
-	20% {
-		transform-origin: center;
-		transform: translateY(-40px) scaleY(1) rotate(0deg);
-	}
-	35% {
-		transform: translateY(-130px) rotate(180deg);
-	}
-	45% {
-		transform: translateY(-110px) rotate(360deg);
-	}
-	55% {
-		transform: translateY(-100px) rotate(540deg);
-	}
-	60% {
-		transform: translateY(-90px) rotate(720deg);
-	}
-	80% {
-		transform-origin: bottom;
-		transform: scaleY(1);
-	}
-	85% {
-		transform-origin: bottom;
-		transform: scaleY(0.9);
-	}
-	90% {
-		transform-origin: bottom;
-		transform: scaleY(1) rotate(0deg);
-	}
-	100% {
-		transform-origin: bottom;
-		transform: scaleY(1) rotate(0deg);
-	}
-}
-
-@keyframes transition-left {
-	0% {
-		transform: translateX(0px);
-	}
-	10% {
-		transform: translateX(0px);
-	}
-	30% {
-		transform: translateX(-100px);
-	}
-	60% {
-		transform: translateX(-100px);
-	}
-	80% {
-		transform: translateX(0px);
-	}
-	90% {
-		transform: translateX(0px);
-	}
-	100% {
-		transform: translateX(0px);
-	}
-}
-
-@keyframes transition-rigth {
-	0% {
-		transform: translateX(0px);
-	}
-	10% {
-		transform: translateX(0px);
-	}
-	30% {
-		transform: translateX(100px);
-	}
-	60% {
-		transform: translateX(100px);
-	}
-	80% {
-		transform: translateX(0px);
-	}
-	90% {
-		transform: translateX(0px);
-	}
-	100% {
-		transform: translateX(0px);
-	}
-}
-@keyframes slide-left {
-	to {
-		transform: translateX(-2000px);
-	}
-}
-@keyframes slide-right {
-	to {
-		transform: translateX(2000px);
+	75% {
+		transform: rotate(-10deg);
 	}
 }
