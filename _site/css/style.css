@@ -294,6 +294,7 @@ body #listByPopular figure figcaption {
 }
 body #byIngredient figure img,
 body #listByPopular figure img {
+  display: block;
   width: 300px;
 }
 body #byIngredient figure:hover figcaption,
